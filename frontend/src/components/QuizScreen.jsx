@@ -45,6 +45,10 @@ const QuizScreen = ({ quizState, setQuizState }) => {
   const progress = ((quizState.currentQuestion + 1) / questions.length) * 100;
 
   const handleAnswerSelect = (answerIndex) => {
+    console.log(`Selected answer index: ${answerIndex} for question ${quizState.currentQuestion + 1}`);
+    console.log(`Current question correct answer: ${currentQuestion.correctAnswer}`);
+    console.log(`Selected option: "${currentQuestion.options[answerIndex]}"`);
+    console.log(`Correct option: "${currentQuestion.options[currentQuestion.correctAnswer]}"`);
     setSelectedAnswer(answerIndex);
   };
 
