@@ -746,6 +746,172 @@ export const questionBank = {
 };
 };
 
+// Question Management System for 24-hour no-repeat and randomization
+export class QuestionManager {
+  constructor() {
+    this.storageKey = 'gkqa_used_questions';
+    this.expirationTime = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+  }
+
+  // Get used questions from localStorage
+  getUsedQuestions() {
+    try {
+      const stored = localStorage.getItem(this.storageKey);
+      return stored ? JSON.parse(stored) : {};
+    } catch (error) {
+      console.error('Error reading used questions:', error);
+      return {};
+    }
+  }
+
+  // Save used questions to localStorage
+  saveUsedQuestions(usedQuestions) {
+    try {
+      localStorage.setItem(this.storageKey, JSON.stringify(usedQuestions));
+    } catch (error) {
+      console.error('Error saving used questions:', error);
+    }
+  }
+
+  // Clean expired questions (older than 24 hours)
+  cleanExpiredQuestions() {
+    const used = this.getUsedQuestions();
+    const now = Date.now();
+    let cleaned = false;
+
+    for (const difficulty in used) {
+      used[difficulty] = used[difficulty].filter(entry => {
+        const isValid = (now - entry.timestamp) < this.expirationTime;
+        if (!isValid) cleaned = true;
+        return isValid;
+      });
+    }
+
+    if (cleaned) {
+      this.saveUsedQuestions(used);
+    }
+
+    return used;
+  }
+
+  // Mark questions as used
+  markQuestionsAsUsed(difficulty, questionIds) {
+    const used = this.cleanExpiredQuestions();
+    if (!used[difficulty]) {
+      used[difficulty] = [];
+    }
+
+    const timestamp = Date.now();
+    const newEntries = questionIds.map(id => ({ id, timestamp }));
+    used[difficulty] = [...used[difficulty], ...newEntries];
+
+    this.saveUsedQuestions(used);
+  }
+
+  // Get available (unused) questions for a difficulty
+  getAvailableQuestions(difficulty) {
+    const used = this.cleanExpiredQuestions();
+    const usedIds = used[difficulty] ? used[difficulty].map(entry => entry.id) : [];
+    const allQuestions = questionBank[difficulty] || [];
+    
+    return allQuestions.filter(question => !usedIds.includes(question.id));
+  }
+
+  // Shuffle array using Fisher-Yates algorithm
+  shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
+
+  // Get balanced set of questions (5 science/math, 5 history/geography, 5 current events)
+  getBalancedQuestions(questions, targetCount = 15) {
+    const categorized = {
+      science: questions.filter(q => q.category === 'science'),
+      math: questions.filter(q => q.category === 'math'),
+      history: questions.filter(q => q.category === 'history'),
+      geography: questions.filter(q => q.category === 'geography'),
+      current: questions.filter(q => q.category === 'current')
+    };
+
+    // Combine science and math for first 5 questions
+    const scienceMath = this.shuffleArray([...categorized.science, ...categorized.math]).slice(0, 5);
+    
+    // Combine history and geography for next 5 questions
+    const historyGeo = this.shuffleArray([...categorized.history, ...categorized.geography]).slice(0, 5);
+    
+    // Current events for last 5 questions
+    const current = this.shuffleArray(categorized.current).slice(0, 5);
+
+    // Combine and shuffle the final order
+    return this.shuffleArray([...scienceMath, ...historyGeo, ...current]).slice(0, targetCount);
+  }
+
+  // Generate quiz questions for a difficulty level
+  generateQuizQuestions(difficulty) {
+    let availableQuestions = this.getAvailableQuestions(difficulty);
+    
+    // If not enough questions available, reset the used questions for this difficulty
+    if (availableQuestions.length < 15) {
+      console.log(`Not enough unused questions (${availableQuestions.length}/15). Resetting ${difficulty} level.`);
+      const used = this.getUsedQuestions();
+      used[difficulty] = [];
+      this.saveUsedQuestions(used);
+      availableQuestions = questionBank[difficulty] || [];
+    }
+
+    // Get balanced selection of questions
+    const selectedQuestions = this.getBalancedQuestions(availableQuestions, 15);
+    
+    // Mark these questions as used
+    const questionIds = selectedQuestions.map(q => q.id);
+    this.markQuestionsAsUsed(difficulty, questionIds);
+
+    // Add sequential IDs for quiz functionality (1-15)
+    return selectedQuestions.map((question, index) => ({
+      ...question,
+      id: index + 1 // Override with sequential ID for quiz logic
+    }));
+  }
+
+  // Get usage statistics (for debugging)
+  getUsageStats() {
+    const used = this.cleanExpiredQuestions();
+    const stats = {};
+    
+    Object.keys(questionBank).forEach(difficulty => {
+      const totalQuestions = questionBank[difficulty].length;
+      const usedCount = used[difficulty] ? used[difficulty].length : 0;
+      stats[difficulty] = {
+        total: totalQuestions,
+        used: usedCount,
+        available: totalQuestions - usedCount
+      };
+    });
+    
+    return stats;
+  }
+}
+
+// Create global instance
+export const questionManager = new QuestionManager();
+
+// Legacy export for backward compatibility - now generates random questions
+export const mockQuestions = {
+  get Simple() {
+    return questionManager.generateQuizQuestions('Simple');
+  },
+  get Medium() {
+    return questionManager.generateQuizQuestions('Medium');
+  },
+  get Advanced() {
+    return questionManager.generateQuizQuestions('Advanced');
+  }
+};
+
 // Mock user results for demonstration
 export const mockResults = {
   score: 11,
