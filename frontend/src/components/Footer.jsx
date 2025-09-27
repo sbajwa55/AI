@@ -87,18 +87,18 @@ const Footer = () => {
 
           {/* Bottom Section */}
           <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-slate-400 text-sm">
+            <div className="text-blue-400 text-sm">
               © {currentYear} {personalInfo.name}. All rights reserved.
             </div>
             
             <div className="flex items-center gap-4">
               <button
                 onClick={scrollToTop}
-                className="text-slate-400 hover:text-white transition-colors text-sm"
+                className="text-blue-400 hover:text-white transition-colors text-sm"
               >
                 Back to Top ↑
               </button>
-              <div className="flex items-center gap-1 text-slate-400 text-sm">
+              <div className="flex items-center gap-1 text-blue-400 text-sm">
                 Made with <Heart size={14} className="text-red-400" /> for excellence
               </div>
             </div>
