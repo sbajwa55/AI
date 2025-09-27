@@ -9,7 +9,18 @@ import { mockQuestions } from "../mock";
 const QuizScreen = ({ quizState, setQuizState }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [timeElapsed, setTimeElapsed] = useState(0);
-  const [questions] = useState(mockQuestions[quizState.difficulty] || mockQuestions.Simple);
+  const [questions] = useState(() => {
+    // Generate questions once and store them in the quiz state if not already present
+    if (!quizState.generatedQuestions) {
+      const newQuestions = mockQuestions[quizState.difficulty] || mockQuestions.Simple;
+      setQuizState(prev => ({
+        ...prev,
+        generatedQuestions: newQuestions
+      }));
+      return newQuestions;
+    }
+    return quizState.generatedQuestions;
+  });
   const navigate = useNavigate();
 
   // Timer effect
