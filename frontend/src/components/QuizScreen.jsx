@@ -105,10 +105,10 @@ const QuizScreen = ({ quizState, setQuizState }) => {
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  if (!currentQuestion) {
+  if (!currentQuestion || questions.length === 0) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center">
-        <div className="text-white text-xl">Loading...</div>
+        <div className="text-white text-xl">Loading Questions...</div>
       </div>
     );
   }
