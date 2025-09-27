@@ -18,15 +18,15 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 bg-slate-50">
+    <section id="skills" className="py-20 bg-blue-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-4">
+            <h2 className="text-4xl md:text-5xl font-light text-blue-900 mb-4">
               Technical Expertise
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-blue-700 max-w-2xl mx-auto">
               Comprehensive skill set spanning database management, cloud platforms, and enterprise data solutions built over 25+ years of hands-on experience.
             </p>
           </div>
