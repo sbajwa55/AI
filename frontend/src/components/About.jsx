@@ -83,13 +83,20 @@ const About = () => {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <Award className="text-blue-600 mt-1" size={24} />
-                    <div>
-                      <h4 className="font-semibold text-blue-900 mb-3">Certifications</h4>
-                      <div className="space-y-2">
+                    <div className="w-full">
+                      <h4 className="font-semibold text-blue-900 mb-4">Certifications</h4>
+                      <div className="grid grid-cols-1 gap-4">
                         {certifications.map((cert, index) => (
-                          <div key={index} className="text-blue-700 text-sm flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                            {cert}
+                          <div key={index} className="flex items-center gap-4 p-3 bg-white rounded-lg shadow-sm">
+                            <img 
+                              src={cert.logo} 
+                              alt={cert.shortName}
+                              className="w-12 h-12 object-contain"
+                            />
+                            <div>
+                              <div className="text-blue-900 text-sm font-medium">{cert.shortName}</div>
+                              <div className="text-blue-700 text-xs">{cert.name}</div>
+                            </div>
                           </div>
                         ))}
                       </div>
