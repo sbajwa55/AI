@@ -497,117 +497,253 @@ export const questionBank = {
     }
   ],
   Advanced: [
-    // Science & Math (Questions 1-5)
+    // Science & Math Questions (1-15)
     {
-      id: 1,
+      id: "a1",
       question: "What is the pH of a neutral solution at 25°C?",
       options: ["6", "7", "8", "9"],
       correctAnswer: 1,
+      category: "science",
       explanation: "At 25°C, pure water has a pH of 7, which is considered neutral (neither acidic nor basic)."
     },
     {
-      id: 2,
+      id: "a2",
       question: "What is the slope of the line passing through points (2,3) and (4,7)?",
       options: ["1", "2", "3", "4"],
       correctAnswer: 1,
+      category: "math",
       explanation: "Slope = (y₂ - y₁)/(x₂ - x₁) = (7 - 3)/(4 - 2) = 4/2 = 2."
     },
     {
-      id: 3,
-      question: "Which blood type is considered the universal donor?",
+      id: "a3",
+      question: "Which blood type is considered the universal recipient?",
       options: ["A", "B", "AB", "O"],
-      correctAnswer: 3,
-      explanation: "Type O negative blood is considered the universal donor because it can be given to people with any blood type."
+      correctAnswer: 2,
+      category: "science",
+      explanation: "Type AB positive blood is the universal recipient as it can receive blood from any blood type."
     },
     {
-      id: 4,
+      id: "a4",
       question: "What is the value of sin(90°)?",
       options: ["0", "1", "1/2", "√3/2"],
       correctAnswer: 1,
+      category: "math",
       explanation: "sin(90°) = 1. This is a fundamental trigonometric value."
     },
     {
-      id: 5,
+      id: "a5",
       question: "Which element has the atomic number 6?",
       options: ["Boron", "Carbon", "Nitrogen", "Oxygen"],
       correctAnswer: 1,
+      category: "science",
       explanation: "Carbon has atomic number 6, meaning it has 6 protons in its nucleus."
     },
-    
-    // History & Geography (Questions 6-10)
     {
-      id: 6,
+      id: "a6",
+      question: "What is the derivative of x² + 3x?",
+      options: ["2x + 3", "x + 3", "2x", "x² + 3"],
+      correctAnswer: 0,
+      category: "math",
+      explanation: "Using the power rule, d/dx(x² + 3x) = 2x + 3."
+    },
+    {
+      id: "a7",
+      question: "What is the chemical formula for methane?",
+      options: ["CH₃", "CH₄", "C₂H₄", "C₂H₆"],
+      correctAnswer: 1,
+      category: "science",
+      explanation: "Methane has the chemical formula CH₄, consisting of one carbon atom bonded to four hydrogen atoms."
+    },
+    {
+      id: "a8",
+      question: "What is the solution to the quadratic equation x² - 5x + 6 = 0?",
+      options: ["x = 2, 3", "x = 1, 6", "x = -2, -3", "x = 2, -3"],
+      correctAnswer: 0,
+      category: "math",
+      explanation: "Factoring: (x-2)(x-3) = 0, so x = 2 or x = 3."
+    },
+    {
+      id: "a9",
+      question: "Which organelle is responsible for protein synthesis?",
+      options: ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+      correctAnswer: 2,
+      category: "science",
+      explanation: "Ribosomes are responsible for protein synthesis by translating mRNA into amino acid sequences."
+    },
+    {
+      id: "a10",
+      question: "What is log₁₀(100)?",
+      options: ["1", "2", "10", "100"],
+      correctAnswer: 1,
+      category: "math",
+      explanation: "log₁₀(100) = 2, because 10² = 100."
+    },
+    
+    // History & Geography Questions (11-25)
+    {
+      id: "a11",
       question: "Which strait separates Europe from Africa?",
       options: ["Bering Strait", "Strait of Gibraltar", "Strait of Hormuz", "Cook Strait"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Strait of Gibraltar separates Europe (Spain) from Africa (Morocco) and connects the Atlantic and Mediterranean."
     },
     {
-      id: 7,
+      id: "a12",
       question: "Which empire was ruled by Julius Caesar?",
       options: ["Greek Empire", "Roman Empire", "Byzantine Empire", "Persian Empire"],
       correctAnswer: 1,
+      category: "history",
       explanation: "Julius Caesar was a leader of the Roman Empire and played a critical role in its expansion."
     },
     {
-      id: 8,
+      id: "a13",
       question: "Which desert is the largest hot desert in the world?",
       options: ["Kalahari", "Sahara", "Arabian", "Thar"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Sahara is the largest hot desert in the world, covering much of North Africa."
     },
     {
-      id: 9,
+      id: "a14",
       question: "In which year did India gain independence from Britain?",
       options: ["1945", "1947", "1948", "1950"],
       correctAnswer: 1,
+      category: "history",
       explanation: "India gained independence from British rule on August 15, 1947."
     },
     {
-      id: 10,
+      id: "a15",
       question: "Which river flows through Egypt?",
       options: ["Amazon", "Nile", "Congo", "Niger"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Nile River flows through Egypt and has been crucial to Egyptian civilization for thousands of years."
     },
-    
-    // Current Events (Questions 11-15)
     {
-      id: 11,
+      id: "a16",
+      question: "What was the name of the ship on which Charles Darwin made his voyage?",
+      options: ["HMS Victory", "HMS Beagle", "HMS Endeavour", "HMS Challenger"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "Charles Darwin sailed on HMS Beagle from 1831-1836, which led to his theory of evolution."
+    },
+    {
+      id: "a17",
+      question: "Which country has the most UNESCO World Heritage Sites?",
+      options: ["France", "Italy", "China", "Spain"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "Italy has the most UNESCO World Heritage Sites with 58 sites as of recent counts."
+    },
+    {
+      id: "a18",
+      question: "In which century did the Renaissance period occur?",
+      options: ["13th-14th century", "14th-17th century", "15th-16th century", "16th-17th century"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "The Renaissance occurred roughly from the 14th to the 17th century, beginning in Italy."
+    },
+    {
+      id: "a19",
+      question: "Which tectonic plates meet at the San Andreas Fault?",
+      options: ["Pacific and North American", "Eurasian and African", "Indo-Australian and Pacific", "Antarctic and South American"],
+      correctAnswer: 0,
+      category: "geography",
+      explanation: "The San Andreas Fault marks the boundary between the Pacific and North American tectonic plates."
+    },
+    {
+      id: "a20",
+      question: "Who was the first person to circumnavigate the globe?",
+      options: ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama", "Juan Sebastián Elcano"],
+      correctAnswer: 3,
+      category: "history",
+      explanation: "Juan Sebastián Elcano completed the first circumnavigation after Magellan died during the voyage."
+    },
+    
+    // Current Events Questions (21-35)
+    {
+      id: "a21",
       question: "Which company is the current leader in electric vehicle sales globally?",
       options: ["Ford", "Tesla", "Toyota", "Volkswagen"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Tesla has been the global leader in electric vehicle sales, though competition is increasing rapidly."
     },
     {
-      id: 12,
+      id: "a22",
       question: "What does 'NFT' stand for in digital art and blockchain?",
       options: ["New File Transfer", "Non-Fungible Token", "Network File Technology", "Next Future Tech"],
       correctAnswer: 1,
+      category: "current",
       explanation: "NFT stands for Non-Fungible Token, representing unique digital assets verified using blockchain technology."
     },
     {
-      id: 13,
+      id: "a23",
       question: "Which streaming platform became popular during the COVID-19 pandemic for video calls?",
       options: ["Skype", "Zoom", "Discord", "Teams"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Zoom experienced massive growth during the COVID-19 pandemic as remote work and learning became widespread."
     },
     {
-      id: 14,
+      id: "a24",
       question: "Which social movement gained global attention in 2020 following police brutality incidents?",
       options: ["Me Too", "Black Lives Matter", "Climate Strike", "Occupy Wall Street"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Black Lives Matter gained worldwide attention in 2020 following the death of George Floyd and other incidents."
     },
     {
-      id: 15,
+      id: "a25",
       question: "Which country was the first to approve a COVID-19 vaccine for emergency use?",
       options: ["USA", "UK", "Germany", "China"],
       correctAnswer: 1,
+      category: "current",
       explanation: "The United Kingdom was the first country to approve the Pfizer-BioNTech COVID-19 vaccine in December 2020."
+    },
+    {
+      id: "a26",
+      question: "What does 'Web3' refer to in technology?",
+      options: ["Third version of websites", "Decentralized web", "Faster internet", "Mobile web"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Web3 refers to a decentralized internet based on blockchain technology and decentralized protocols."
+    },
+    {
+      id: "a27",
+      question: "Which programming language is most associated with artificial intelligence?",
+      options: ["Java", "Python", "C++", "JavaScript"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Python is widely used in AI development due to its extensive libraries and ease of use for machine learning."
+    },
+    {
+      id: "a28",
+      question: "What does 'AR' stand for in technology?",
+      options: ["Artificial Reality", "Augmented Reality", "Advanced Reality", "Automated Reality"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "AR stands for Augmented Reality, which overlays digital information onto the real world."
+    },
+    {
+      id: "a29",
+      question: "Which company acquired WhatsApp in 2014?",
+      options: ["Google", "Facebook (Meta)", "Microsoft", "Apple"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Facebook (now Meta) acquired WhatsApp for $19 billion in 2014."
+    },
+    {
+      id: "a30",
+      question: "What is the primary purpose of blockchain technology?",
+      options: ["Data storage", "Decentralized verification", "Faster computing", "Image processing"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Blockchain's primary purpose is decentralized verification and maintaining tamper-proof records without central authority."
     }
   ]
+};
 };
 
 // Mock user results for demonstration
