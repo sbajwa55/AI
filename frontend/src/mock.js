@@ -176,87 +176,87 @@ export const mockQuestions = {
   Advanced: [
     {
       id: 1,
-      question: "Which treaty ended World War I?",
-      options: ["Treaty of Versailles", "Treaty of Paris", "Treaty of Vienna", "Treaty of Westphalia"],
+      question: "What is the electron configuration of Iron (Fe, atomic number 26)?",
+      options: ["[Ar] 3d⁶ 4s²", "[Ar] 3d⁸", "[Ar] 3d⁷ 4s¹", "[Ar] 4s² 3d⁶"],
       correctAnswer: 0,
-      explanation: "The Treaty of Versailles (1919) officially ended World War I between Germany and the Allied Powers."
+      explanation: "Iron (Fe) has the electron configuration [Ar] 3d⁶ 4s², following Hund's rule and the aufbau principle."
     },
     {
       id: 2,
-      question: "What is the derivative of sin(x) with respect to x?",
-      options: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+      question: "What is the integral of 1/x dx?",
+      options: ["ln|x| + C", "x + C", "1/x² + C", "e^x + C"],
       correctAnswer: 0,
-      explanation: "The derivative of sin(x) with respect to x is cos(x), a fundamental rule in calculus."
+      explanation: "The integral of 1/x dx is ln|x| + C, where C is the constant of integration and ln is the natural logarithm."
     },
     {
       id: 3,
-      question: "Which ancient wonder of the world was located in Alexandria, Egypt?",
-      options: ["Colossus of Rhodes", "Lighthouse of Alexandria", "Hanging Gardens", "Statue of Zeus"],
-      correctAnswer: 1,
-      explanation: "The Lighthouse of Alexandria (Pharos) was one of the Seven Wonders of the Ancient World, built around 280 BC."
+      question: "Which enzyme unwinds the DNA double helix during replication?",
+      options: ["DNA polymerase", "DNA ligase", "Helicase", "Primase"],
+      correctAnswer: 2,
+      explanation: "Helicase unwinds the DNA double helix by breaking hydrogen bonds between base pairs during replication."
     },
     {
       id: 4,
-      question: "What is Avogadro's number approximately?",
-      options: ["6.02 × 10²²", "6.02 × 10²³", "6.02 × 10²⁴", "6.02 × 10²¹"],
-      correctAnswer: 1,
-      explanation: "Avogadro's number is approximately 6.02 × 10²³, representing the number of particles in one mole of substance."
+      question: "What is the equilibrium constant expression for: 2A + B ⇌ C + 3D?",
+      options: ["K = [C][D]³/[A]²[B]", "K = [A]²[B]/[C][D]³", "K = [C][D]/[A][B]", "K = [A][B]/[C][D]"],
+      correctAnswer: 0,
+      explanation: "For aA + bB ⇌ cC + dD, K = [C]^c[D]^d/[A]^a[B]^b. So K = [C][D]³/[A]²[B]."
     },
     {
       id: 5,
-      question: "Which imaginary line divides the Earth into Northern and Southern hemispheres?",
-      options: ["Prime Meridian", "Equator", "Tropic of Cancer", "International Date Line"],
+      question: "In quantum mechanics, what does the Schrödinger equation describe?",
+      options: ["Particle position", "Wave function evolution", "Energy levels", "Momentum"],
       correctAnswer: 1,
-      explanation: "The Equator (0° latitude) divides the Earth into Northern and Southern hemispheres."
+      explanation: "The Schrödinger equation describes how the quantum wave function of a physical system changes over time."
     },
     {
       id: 6,
-      question: "Who developed the theory of relativity?",
-      options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Stephen Hawking"],
+      question: "What is the standard enthalpy of formation (ΔH°f) for any element in its standard state?",
+      options: ["1 kJ/mol", "0 kJ/mol", "-1 kJ/mol", "Depends on the element"],
       correctAnswer: 1,
-      explanation: "Albert Einstein developed both the special (1905) and general (1915) theories of relativity."
+      explanation: "By definition, the standard enthalpy of formation of any element in its most stable form is 0 kJ/mol."
     },
     {
       id: 7,
-      question: "In which year was FIFA founded?",
-      options: ["1902", "1904", "1906", "1908"],
-      correctAnswer: 1,
-      explanation: "FIFA (Fédération Internationale de Football Association) was founded on May 21, 1904, in Paris."
+      question: "Which process produces the most ATP in cellular respiration?",
+      options: ["Glycolysis", "Citric acid cycle", "Electron transport chain", "Fermentation"],
+      correctAnswer: 2,
+      explanation: "The electron transport chain produces about 32-34 ATP molecules, the most in cellular respiration."
     },
     {
       id: 8,
-      question: "What is the most abundant gas in Earth's atmosphere?",
-      options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+      question: "What is the hybridization of carbon in ethyne (C₂H₂)?",
+      options: ["sp³", "sp²", "sp", "sp³d"],
       correctAnswer: 2,
-      explanation: "Nitrogen makes up about 78% of Earth's atmosphere, making it the most abundant gas."
+      explanation: "In ethyne (acetylene), carbon atoms are sp hybridized, forming a linear molecule with a triple bond."
     },
     {
       id: 9,
-      question: "Which composer wrote 'The Four Seasons'?",
-      options: ["Mozart", "Vivaldi", "Beethoven", "Bach"],
+      question: "Which historical event triggered the start of World War I?",
+      options: ["Sinking of Lusitania", "Assassination of Archduke Franz Ferdinand", "German invasion of Belgium", "Russian mobilization"],
       correctAnswer: 1,
-      explanation: "Antonio Vivaldi composed 'The Four Seasons' (Le quattro stagioni) around 1720, a set of violin concertos."
+      explanation: "The assassination of Archduke Franz Ferdinand of Austria-Hungary on June 28, 1914, triggered World War I."
     },
     {
       id: 10,
-      question: "What is the limit of (sin x)/x as x approaches 0?",
-      options: ["0", "1", "∞", "undefined"],
-      correctAnswer: 1,
-      explanation: "The limit of (sin x)/x as x approaches 0 is 1, a fundamental limit in calculus."
+      question: "What is the Taylor series expansion of e^x around x = 0?",
+      options: ["∑(x^n/n!)", "∑((-1)^n x^(2n+1)/(2n+1)!)", "∑((-1)^n x^(2n)/(2n)!)", "∑(x^n/n)"],
+      correctAnswer: 0,
+      explanation: "The Taylor series for e^x around x = 0 is ∑(x^n/n!) = 1 + x + x²/2! + x³/3! + ..."
     },
     {
       id: 11,
-      question: "Which art movement is Pablo Picasso most associated with?",
-      options: ["Impressionism", "Cubism", "Surrealism", "Expressionism"],
+      question: "In genetics, what does 'epistasis' refer to?",
+      options: ["Gene mutation", "Gene interaction", "Gene expression", "Gene duplication"],
       correctAnswer: 1,
-      explanation: "Pablo Picasso co-founded Cubism with Georges Braque, revolutionizing 20th-century art."
+      explanation: "Epistasis is the interaction between genes where one gene affects or masks the expression of another gene."
     },
     {
       id: 12,
-      question: "Who wrote 'One Hundred Years of Solitude'?",
-      options: ["Jorge Luis Borges", "Gabriel García Márquez", "Mario Vargas Llosa", "Isabel Allende"],
-      correctAnswer: 1,
-      explanation: "Gabriel García Márquez wrote 'One Hundred Years of Solitude' (1967), a masterpiece of magical realism."
+      question: "What is the magnetic quantum number (mₗ) range for d orbitals?",
+      options: ["-2 to +2", "-1 to +1", "-3 to +3", "0 to +4"],
+      correctAnswer: 0,
+      explanation: "For d orbitals (l = 2), the magnetic quantum number mₗ ranges from -2 to +2, giving 5 possible orientations."
     }
   ]
 };
