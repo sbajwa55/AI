@@ -145,6 +145,41 @@ export const projects = [
   }
 ];
 
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Mitchell",
+    position: "VP of Technology",
+    company: "BNY Mellon",
+    content: "Sandeep's expertise in database architecture and cloud migrations was instrumental in our successful transition to Snowflake. His attention to detail and strategic approach ensured zero downtime during a critical business period.",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Michael Rodriguez", 
+    position: "IT Director",
+    company: "University of Pittsburgh",
+    content: "Working with Sandeep for over 15 years, I can confidently say he's one of the most skilled database administrators I've encountered. His implementation of our Big Data infrastructure transformed our analytics capabilities.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Jennifer Walsh",
+    position: "Senior Database Manager",
+    company: "PNC Financial Services",
+    content: "Sandeep's deep Oracle expertise and ability to manage 500+ databases simultaneously is remarkable. His proactive approach to database optimization has significantly improved our system performance.",
+    rating: 5
+  },
+  {
+    id: 4,
+    name: "David Chen",
+    position: "Chief Technology Officer", 
+    company: "Healthcare Analytics Corp",
+    content: "The real-time data replication system Sandeep implemented has been flawless. Processing half a million transactions daily with sub-5-second latency is exactly what our business needed.",
+    rating: 5
+  }
+];
+
 export const certifications = [
   "Oracle Certified Professional in Database Administration",
   "Python PCEP – Certified Entry-Level Python Programmer"

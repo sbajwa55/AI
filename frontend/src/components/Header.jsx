@@ -28,6 +28,7 @@ const Header = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -38,7 +39,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div 
-            className="text-xl font-bold text-slate-800 cursor-pointer hover:text-slate-600 transition-colors"
+            className="text-xl font-bold text-blue-900 cursor-pointer hover:text-blue-700 transition-colors"
             onClick={() => scrollToSection('home')}
           >
             Sandeep S. Bajwa
@@ -50,7 +51,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-slate-600 hover:text-slate-900 transition-colors duration-200 font-medium"
+                className="text-blue-600 hover:text-blue-900 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -61,7 +62,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden text-blue-900"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -70,12 +71,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-blue-200 pt-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-2 text-slate-600 hover:text-slate-900 transition-colors duration-200 font-medium"
+                className="block w-full text-left py-2 text-blue-600 hover:text-blue-900 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
