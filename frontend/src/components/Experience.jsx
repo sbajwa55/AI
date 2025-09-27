@@ -45,7 +45,7 @@ const Experience = () => {
                     </div>
                     <Badge 
                       variant="outline" 
-                      className="bg-slate-800 text-white border-slate-800 px-3 py-1 w-fit"
+                      className="bg-blue-800 text-white border-blue-800 px-3 py-1 w-fit"
                     >
                       <Calendar size={14} className="mr-2" />
                       {exp.period}
