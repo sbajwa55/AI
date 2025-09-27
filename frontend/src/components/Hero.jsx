@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { personalInfo } from '../data/mock';
-import { ChevronDown, Mail, MapPin, User } from 'lucide-react';
+import { ChevronDown, Mail, MapPin, User, Download } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
