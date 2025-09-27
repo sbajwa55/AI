@@ -14,7 +14,8 @@ function App() {
     startTime: null,
     endTime: null,
     isQuizStarted: false,
-    isQuizCompleted: false
+    isQuizCompleted: false,
+    generatedQuestions: null
   });
 
   return (
