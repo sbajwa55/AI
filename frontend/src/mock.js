@@ -343,7 +343,7 @@ export const mockQuestions = {
 // Mock user results for demonstration
 export const mockResults = {
   score: 8,
-  totalQuestions: 12,
+  totalQuestions: 15,
   timeTaken: 450, // seconds
   difficulty: "Medium",
   correctAnswers: [1, 2, 4, 5, 6, 8, 9, 11],
