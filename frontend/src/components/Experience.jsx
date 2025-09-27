@@ -24,15 +24,15 @@ const Experience = () => {
             {experience.map((exp, index) => (
               <Card 
                 key={index} 
-                className="bg-gradient-to-r from-white to-slate-50 border-slate-200 hover:shadow-lg transition-all duration-300 group"
+                className="bg-gradient-to-r from-white to-blue-50 border-blue-200 hover:shadow-lg transition-all duration-300 group"
               >
                 <CardHeader className="pb-4">
                   <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                     <div className="flex-1">
-                      <CardTitle className="text-xl text-slate-800 mb-2 group-hover:text-slate-900 transition-colors">
+                      <CardTitle className="text-xl text-blue-900 mb-2 group-hover:text-blue-800 transition-colors">
                         {exp.title}
                       </CardTitle>
-                      <div className="flex flex-wrap items-center gap-4 text-slate-600">
+                      <div className="flex flex-wrap items-center gap-4 text-blue-700">
                         <div className="flex items-center gap-2">
                           <Building2 size={16} />
                           <span className="font-medium">{exp.company}</span>
