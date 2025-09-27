@@ -74,7 +74,7 @@ const Footer = () => {
                       href={social.href}
                       target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
                       rel="noopener noreferrer"
-                      className="p-2 bg-blue-700 rounded-lg hover:bg-slate-600 transition-colors duration-200"
+                      className="p-2 bg-blue-700 rounded-lg hover:bg-blue-600 transition-colors duration-200"
                       aria-label={social.label}
                     >
                       <IconComponent size={18} />
