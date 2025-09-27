@@ -126,7 +126,7 @@ const Contact = () => {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-3 bg-slate-100 rounded-lg hover:bg-slate-800 hover:text-white transition-all duration-300 text-slate-600 group"
+                        className="p-3 bg-blue-100 rounded-lg hover:bg-blue-800 hover:text-white transition-all duration-300 text-blue-600 group"
                       >
                         <IconComponent size={20} />
                       </a>
