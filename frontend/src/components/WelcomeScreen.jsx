@@ -129,7 +129,7 @@ const WelcomeScreen = ({ quizState, setQuizState }) => {
           </div>
 
           <div className="text-center text-sm text-gray-500 space-y-1">
-            <p>✨ 12 Questions • Multiple Choice • Instant Results</p>
+            <p>✨ 15 Questions • Multiple Choice • Instant Results</p>
             <p>🎯 Get explanations for all incorrect answers</p>
           </div>
         </CardContent>
