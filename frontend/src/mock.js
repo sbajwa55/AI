@@ -1,117 +1,252 @@
 // Mock data for GKQA app - Academic quiz for 15-21 year olds preparing for examinations
-// Structure: 5 Science/Math + 5 History/Geography + 5 Current Events = 15 questions per level
+// Extended question bank for better randomization and 24-hour no-repeat system
 
-export const mockQuestions = {
+export const questionBank = {
   Simple: [
-    // Science & Math (Questions 1-5)
+    // Science & Math Questions (1-15)
     {
-      id: 1,
+      id: "s1",
       question: "What is the chemical formula for water?",
       options: ["H₂O₂", "H₂O", "HO₂", "H₃O"],
       correctAnswer: 1,
+      category: "science",
       explanation: "Water has the chemical formula H₂O, consisting of two hydrogen atoms bonded to one oxygen atom."
     },
     {
-      id: 2,
+      id: "s2",
       question: "What is 12 × 8?",
       options: ["94", "96", "98", "100"],
       correctAnswer: 1,
+      category: "math",
       explanation: "12 × 8 = 96. This is basic multiplication."
     },
     {
-      id: 3,
+      id: "s3",
       question: "Which organ pumps blood throughout the human body?",
       options: ["Brain", "Heart", "Liver", "Lungs"],
       correctAnswer: 1,
+      category: "science",
       explanation: "The heart pumps blood throughout the body, delivering oxygen and nutrients to all tissues."
     },
     {
-      id: 4,
+      id: "s4",
       question: "What is 15% of 100?",
       options: ["10", "15", "20", "25"],
       correctAnswer: 1,
+      category: "math",
       explanation: "15% of 100 = (15/100) × 100 = 15."
     },
     {
-      id: 5,
+      id: "s5",
       question: "Which planet is known as the 'Red Planet'?",
       options: ["Venus", "Mars", "Jupiter", "Saturn"],
       correctAnswer: 1,
+      category: "science",
       explanation: "Mars is called the 'Red Planet' due to iron oxide (rust) on its surface giving it a reddish appearance."
     },
-    
-    // History & Geography (Questions 6-10)
     {
-      id: 6,
+      id: "s6",
+      question: "What is the boiling point of water at sea level?",
+      options: ["90°C", "100°C", "110°C", "120°C"],
+      correctAnswer: 1,
+      category: "science",
+      explanation: "Water boils at 100°C (212°F) at sea level under standard atmospheric pressure."
+    },
+    {
+      id: "s7",
+      question: "What is 9 + 16?",
+      options: ["24", "25", "26", "27"],
+      correctAnswer: 1,
+      category: "math",
+      explanation: "9 + 16 = 25. This is basic addition."
+    },
+    {
+      id: "s8",
+      question: "How many bones are in the adult human body?",
+      options: ["196", "206", "216", "226"],
+      correctAnswer: 1,
+      category: "science",
+      explanation: "An adult human body has 206 bones, though babies are born with about 270 bones that fuse as they grow."
+    },
+    {
+      id: "s9",
+      question: "What is the square root of 36?",
+      options: ["5", "6", "7", "8"],
+      correctAnswer: 1,
+      category: "math",
+      explanation: "√36 = 6, because 6 × 6 = 36."
+    },
+    {
+      id: "s10",
+      question: "What gas do we breathe in to live?",
+      options: ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+      correctAnswer: 1,
+      category: "science",
+      explanation: "We breathe in oxygen (O₂) which is essential for cellular respiration and energy production."
+    },
+    
+    // History & Geography Questions (11-25)
+    {
+      id: "s11",
       question: "Which city is the capital of Australia?",
       options: ["Sydney", "Canberra", "Melbourne", "Perth"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "Canberra is the capital city of Australia, located between Sydney and Melbourne."
     },
     {
-      id: 7,
+      id: "s12",
       question: "In which year did World War I end?",
       options: ["1917", "1918", "1919", "1920"],
       correctAnswer: 1,
+      category: "history",
       explanation: "World War I ended on November 11, 1918, when Germany signed the armistice agreement."
     },
     {
-      id: 8,
+      id: "s13",
       question: "Which is the longest river in the world?",
       options: ["Amazon", "Nile", "Mississippi", "Yangtze"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Nile River is generally considered the longest river in the world at approximately 6,650 kilometers."
     },
     {
-      id: 9,
+      id: "s14",
       question: "Who was the first President of the United States?",
       options: ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
       correctAnswer: 1,
+      category: "history",
       explanation: "George Washington was the first President of the United States, serving from 1789 to 1797."
     },
     {
-      id: 10,
+      id: "s15",
       question: "Which continent is the largest by area?",
       options: ["Africa", "Asia", "North America", "Europe"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "Asia is the largest continent by both area and population, covering about 30% of Earth's land area."
     },
-    
-    // Current Events (Questions 11-15)
     {
-      id: 11,
+      id: "s16",
+      question: "What is the capital of Japan?",
+      options: ["Osaka", "Tokyo", "Kyoto", "Hiroshima"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "Tokyo is the capital and largest city of Japan, serving as the political and economic center."
+    },
+    {
+      id: "s17",
+      question: "In which year did the Titanic sink?",
+      options: ["1910", "1912", "1914", "1916"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "The RMS Titanic sank on April 15, 1912, after hitting an iceberg in the North Atlantic Ocean."
+    },
+    {
+      id: "s18",
+      question: "Which ocean is between Europe and America?",
+      options: ["Pacific", "Atlantic", "Indian", "Arctic"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "The Atlantic Ocean lies between Europe and America, connecting the continents."
+    },
+    {
+      id: "s19",
+      question: "Who built the pyramids in Egypt?",
+      options: ["Romans", "Ancient Egyptians", "Greeks", "Persians"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "The ancient Egyptians built the pyramids as tombs for their pharaohs, with the Great Pyramid of Giza being the most famous."
+    },
+    {
+      id: "s20",
+      question: "Which mountain range contains Mount Everest?",
+      options: ["Andes", "Himalayas", "Alps", "Rocky Mountains"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "Mount Everest is located in the Himalayas on the border between Nepal and Tibet."
+    },
+    
+    // Current Events Questions (21-35)
+    {
+      id: "s21",
       question: "Which social media platform was acquired by Elon Musk in 2022?",
       options: ["Facebook", "Twitter", "Instagram", "TikTok"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Elon Musk acquired Twitter in October 2022 for approximately $44 billion and later rebranded it to 'X'."
     },
     {
-      id: 12,
+      id: "s22",
       question: "Which country hosted the 2024 Summer Olympics?",
       options: ["Japan", "France", "USA", "Australia"],
       correctAnswer: 1,
+      category: "current",
       explanation: "France hosted the 2024 Summer Olympics in Paris from July 26 to August 11, 2024."
     },
     {
-      id: 13,
+      id: "s23",
       question: "What does 'AI' stand for in technology?",
       options: ["Advanced Intelligence", "Artificial Intelligence", "Automated Intelligence", "Applied Intelligence"],
       correctAnswer: 1,
+      category: "current",
       explanation: "AI stands for Artificial Intelligence, referring to machine systems that can perform tasks typically requiring human intelligence."
     },
     {
-      id: 14,
+      id: "s24",
       question: "Which company developed ChatGPT?",
       options: ["Google", "OpenAI", "Microsoft", "Meta"],
       correctAnswer: 1,
+      category: "current",
       explanation: "OpenAI developed ChatGPT, a large language model chatbot launched in November 2022."
     },
     {
-      id: 15,
+      id: "s25",
       question: "Which global event significantly impacted worldwide travel in 2020-2022?",
       options: ["Olympics", "COVID-19 Pandemic", "World Cup", "Climate Summit"],
       correctAnswer: 1,
+      category: "current",
       explanation: "The COVID-19 pandemic significantly restricted global travel with lockdowns, quarantines, and border closures worldwide."
+    },
+    {
+      id: "s26",
+      question: "Which streaming service is known for 'Stranger Things'?",
+      options: ["Disney+", "Netflix", "Amazon Prime", "Hulu"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Netflix is the streaming platform that produces and hosts the popular series 'Stranger Things'."
+    },
+    {
+      id: "s27",
+      question: "What does 'EV' stand for in automotive industry?",
+      options: ["Engine Vehicle", "Electric Vehicle", "Enhanced Vehicle", "Efficient Vehicle"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "EV stands for Electric Vehicle, referring to cars powered by electric motors instead of gasoline engines."
+    },
+    {
+      id: "s28",
+      question: "Which app is known for short vertical videos?",
+      options: ["Instagram", "TikTok", "YouTube", "Snapchat"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "TikTok is primarily known for its short-form vertical video content, though other platforms now offer similar features."
+    },
+    {
+      id: "s29",
+      question: "What does 'NFT' stand for?",
+      options: ["New File Type", "Non-Fungible Token", "Network File Transfer", "Next Future Tech"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "NFT stands for Non-Fungible Token, representing unique digital assets verified using blockchain technology."
+    },
+    {
+      id: "s30",
+      question: "Which space company was founded by Elon Musk?",
+      options: ["Blue Origin", "SpaceX", "Virgin Galactic", "Boeing"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "SpaceX was founded by Elon Musk in 2002 with the goal of reducing space transportation costs and Mars colonization."
     }
   ],
   Medium: [
