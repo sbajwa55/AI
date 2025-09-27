@@ -39,17 +39,17 @@ const Skills = () => {
               return (
                 <Card 
                   key={index} 
-                  className="bg-white border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+                  className="bg-white border-blue-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
                 >
                   <CardHeader className="pb-4">
                     <div className="flex items-center gap-3">
-                      <div className="p-2 bg-slate-100 rounded-lg group-hover:bg-slate-800 transition-colors duration-300">
+                      <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-800 transition-colors duration-300">
                         <IconComponent 
                           size={20} 
-                          className="text-slate-600 group-hover:text-white transition-colors duration-300" 
+                          className="text-blue-600 group-hover:text-white transition-colors duration-300" 
                         />
                       </div>
-                      <CardTitle className="text-lg text-slate-800">
+                      <CardTitle className="text-lg text-blue-900">
                         {skillCategory.category}
                       </CardTitle>
                     </div>
@@ -60,7 +60,7 @@ const Skills = () => {
                         <Badge
                           key={skillIndex}
                           variant="secondary"
-                          className="bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors duration-200 text-xs px-2 py-1"
+                          className="bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors duration-200 text-xs px-2 py-1"
                         >
                           {skill}
                         </Badge>
