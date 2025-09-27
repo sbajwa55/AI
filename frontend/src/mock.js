@@ -227,89 +227,115 @@ export const mockQuestions = {
     }
   ],
   Advanced: [
+    // Science & Math (Questions 1-5)
     {
       id: 1,
-      question: "What is the electron configuration of Iron (Fe, atomic number 26)?",
-      options: ["[Ar] 3d⁶ 4s²", "[Ar] 3d⁸", "[Ar] 3d⁷ 4s¹", "[Ar] 4s² 3d⁶"],
-      correctAnswer: 0,
-      explanation: "Iron (Fe) has the electron configuration [Ar] 3d⁶ 4s², following Hund's rule and the aufbau principle."
+      question: "What is the pH of a neutral solution at 25°C?",
+      options: ["6", "7", "8", "9"],
+      correctAnswer: 1,
+      explanation: "At 25°C, pure water has a pH of 7, which is considered neutral (neither acidic nor basic)."
     },
     {
       id: 2,
-      question: "What is the integral of 1/x dx?",
-      options: ["ln|x| + C", "x + C", "1/x² + C", "e^x + C"],
-      correctAnswer: 0,
-      explanation: "The integral of 1/x dx is ln|x| + C, where C is the constant of integration and ln is the natural logarithm."
+      question: "What is the slope of the line passing through points (2,3) and (4,7)?",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: 1,
+      explanation: "Slope = (y₂ - y₁)/(x₂ - x₁) = (7 - 3)/(4 - 2) = 4/2 = 2."
     },
     {
       id: 3,
-      question: "Which enzyme unwinds the DNA double helix during replication?",
-      options: ["DNA polymerase", "DNA ligase", "Helicase", "Primase"],
-      correctAnswer: 2,
-      explanation: "Helicase unwinds the DNA double helix by breaking hydrogen bonds between base pairs during replication."
+      question: "Which blood type is considered the universal donor?",
+      options: ["A", "B", "AB", "O"],
+      correctAnswer: 3,
+      explanation: "Type O negative blood is considered the universal donor because it can be given to people with any blood type."
     },
     {
       id: 4,
-      question: "What is the equilibrium constant expression for: 2A + B ⇌ C + 3D?",
-      options: ["K = [C][D]³/[A]²[B]", "K = [A]²[B]/[C][D]³", "K = [C][D]/[A][B]", "K = [A][B]/[C][D]"],
-      correctAnswer: 0,
-      explanation: "For aA + bB ⇌ cC + dD, K = [C]^c[D]^d/[A]^a[B]^b. So K = [C][D]³/[A]²[B]."
+      question: "What is the value of sin(90°)?",
+      options: ["0", "1", "1/2", "√3/2"],
+      correctAnswer: 1,
+      explanation: "sin(90°) = 1. This is a fundamental trigonometric value."
     },
     {
       id: 5,
-      question: "In quantum mechanics, what does the Schrödinger equation describe?",
-      options: ["Particle position", "Wave function evolution", "Energy levels", "Momentum"],
+      question: "Which element has the atomic number 6?",
+      options: ["Boron", "Carbon", "Nitrogen", "Oxygen"],
       correctAnswer: 1,
-      explanation: "The Schrödinger equation describes how the quantum wave function of a physical system changes over time."
+      explanation: "Carbon has atomic number 6, meaning it has 6 protons in its nucleus."
     },
+    
+    // History & Geography (Questions 6-10)
     {
       id: 6,
-      question: "What is the standard enthalpy of formation (ΔH°f) for any element in its standard state?",
-      options: ["1 kJ/mol", "0 kJ/mol", "-1 kJ/mol", "Depends on the element"],
+      question: "Which strait separates Europe from Africa?",
+      options: ["Bering Strait", "Strait of Gibraltar", "Strait of Hormuz", "Cook Strait"],
       correctAnswer: 1,
-      explanation: "By definition, the standard enthalpy of formation of any element in its most stable form is 0 kJ/mol."
+      explanation: "The Strait of Gibraltar separates Europe (Spain) from Africa (Morocco) and connects the Atlantic and Mediterranean."
     },
     {
       id: 7,
-      question: "Which process produces the most ATP in cellular respiration?",
-      options: ["Glycolysis", "Citric acid cycle", "Electron transport chain", "Fermentation"],
-      correctAnswer: 2,
-      explanation: "The electron transport chain produces about 32-34 ATP molecules, the most in cellular respiration."
+      question: "Which empire was ruled by Julius Caesar?",
+      options: ["Greek Empire", "Roman Empire", "Byzantine Empire", "Persian Empire"],
+      correctAnswer: 1,
+      explanation: "Julius Caesar was a leader of the Roman Empire and played a critical role in its expansion."
     },
     {
       id: 8,
-      question: "What is the hybridization of carbon in ethyne (C₂H₂)?",
-      options: ["sp³", "sp²", "sp", "sp³d"],
-      correctAnswer: 2,
-      explanation: "In ethyne (acetylene), carbon atoms are sp hybridized, forming a linear molecule with a triple bond."
+      question: "Which desert is the largest hot desert in the world?",
+      options: ["Kalahari", "Sahara", "Arabian", "Thar"],
+      correctAnswer: 1,
+      explanation: "The Sahara is the largest hot desert in the world, covering much of North Africa."
     },
     {
       id: 9,
-      question: "Which historical event triggered the start of World War I?",
-      options: ["Sinking of Lusitania", "Assassination of Archduke Franz Ferdinand", "German invasion of Belgium", "Russian mobilization"],
+      question: "In which year did India gain independence from Britain?",
+      options: ["1945", "1947", "1948", "1950"],
       correctAnswer: 1,
-      explanation: "The assassination of Archduke Franz Ferdinand of Austria-Hungary on June 28, 1914, triggered World War I."
+      explanation: "India gained independence from British rule on August 15, 1947."
     },
     {
       id: 10,
-      question: "What is the Taylor series expansion of e^x around x = 0?",
-      options: ["∑(x^n/n!)", "∑((-1)^n x^(2n+1)/(2n+1)!)", "∑((-1)^n x^(2n)/(2n)!)", "∑(x^n/n)"],
-      correctAnswer: 0,
-      explanation: "The Taylor series for e^x around x = 0 is ∑(x^n/n!) = 1 + x + x²/2! + x³/3! + ..."
+      question: "Which river flows through Egypt?",
+      options: ["Amazon", "Nile", "Congo", "Niger"],
+      correctAnswer: 1,
+      explanation: "The Nile River flows through Egypt and has been crucial to Egyptian civilization for thousands of years."
     },
+    
+    // Current Events (Questions 11-15)
     {
       id: 11,
-      question: "In genetics, what does 'epistasis' refer to?",
-      options: ["Gene mutation", "Gene interaction", "Gene expression", "Gene duplication"],
+      question: "Which company is the current leader in electric vehicle sales globally?",
+      options: ["Ford", "Tesla", "Toyota", "Volkswagen"],
       correctAnswer: 1,
-      explanation: "Epistasis is the interaction between genes where one gene affects or masks the expression of another gene."
+      explanation: "Tesla has been the global leader in electric vehicle sales, though competition is increasing rapidly."
     },
     {
       id: 12,
-      question: "What is the magnetic quantum number (mₗ) range for d orbitals?",
-      options: ["-2 to +2", "-1 to +1", "-3 to +3", "0 to +4"],
-      correctAnswer: 0,
-      explanation: "For d orbitals (l = 2), the magnetic quantum number mₗ ranges from -2 to +2, giving 5 possible orientations."
+      question: "What does 'NFT' stand for in digital art and blockchain?",
+      options: ["New File Transfer", "Non-Fungible Token", "Network File Technology", "Next Future Tech"],
+      correctAnswer: 1,
+      explanation: "NFT stands for Non-Fungible Token, representing unique digital assets verified using blockchain technology."
+    },
+    {
+      id: 13,
+      question: "Which streaming platform became popular during the COVID-19 pandemic for video calls?",
+      options: ["Skype", "Zoom", "Discord", "Teams"],
+      correctAnswer: 1,
+      explanation: "Zoom experienced massive growth during the COVID-19 pandemic as remote work and learning became widespread."
+    },
+    {
+      id: 14,
+      question: "Which social movement gained global attention in 2020 following police brutality incidents?",
+      options: ["Me Too", "Black Lives Matter", "Climate Strike", "Occupy Wall Street"],
+      correctAnswer: 1,
+      explanation: "Black Lives Matter gained worldwide attention in 2020 following the death of George Floyd and other incidents."
+    },
+    {
+      id: 15,
+      question: "Which country was the first to approve a COVID-19 vaccine for emergency use?",
+      options: ["USA", "UK", "Germany", "China"],
+      correctAnswer: 1,
+      explanation: "The United Kingdom was the first country to approve the Pfizer-BioNTech COVID-19 vaccine in December 2020."
     }
   ]
 };
