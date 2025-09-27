@@ -143,7 +143,7 @@ const Projects = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      className="w-full border-slate-300 text-slate-700 hover:bg-slate-100 group-hover:border-slate-800 group-hover:text-slate-800 transition-all duration-300"
+                      className="w-full border-blue-300 text-blue-700 hover:bg-blue-100 group-hover:border-blue-800 group-hover:text-blue-800 transition-all duration-300"
                     >
                       <span className="mr-2">View Details</span>
                       <ExternalLink size={14} />
