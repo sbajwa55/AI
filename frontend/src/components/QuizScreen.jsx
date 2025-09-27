@@ -15,13 +15,17 @@ const QuizScreen = ({ quizState, setQuizState }) => {
   useEffect(() => {
     if (!quizState.generatedQuestions && quizState.difficulty) {
       const newQuestions = mockQuestions[quizState.difficulty] || mockQuestions.Simple;
-      console.log('Generated questions for quiz:', newQuestions.length, 'questions');
+      console.log('🎯 Generated questions for quiz:', newQuestions.length, 'questions for difficulty:', quizState.difficulty);
+      console.log('📝 First question:', newQuestions[0]?.question);
+      console.log('📝 First question correct answer index:', newQuestions[0]?.correctAnswer);
+      console.log('📝 First question options:', newQuestions[0]?.options);
       setQuestions(newQuestions);
       setQuizState(prev => ({
         ...prev,
         generatedQuestions: newQuestions
       }));
     } else if (quizState.generatedQuestions) {
+      console.log('🔄 Using existing generated questions');
       setQuestions(quizState.generatedQuestions);
     }
   }, [quizState.difficulty, quizState.generatedQuestions, setQuizState]);
