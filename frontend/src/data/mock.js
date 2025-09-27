@@ -155,6 +155,15 @@ export const testimonials = [
     rating: 5,
     date: "March 9, 2011",
     relationship: "Managed Sandeep directly"
+  },
+  {
+    id: 2,
+    name: "William Wolf",
+    position: "Director, Database Administration",
+    company: "Abarca Health",
+    content: "Sandeep is a very able ORACLE DBA. He thinks faster than anyone I have ever known. He knows more about ORACLE databases than anyone I have known.",
+    rating: 5,
+    relationship: "Worked with Sandeep on the same team"
   }
 ];
 
