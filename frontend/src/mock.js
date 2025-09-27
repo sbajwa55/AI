@@ -1,7 +1,9 @@
 // Mock data for GKQA app - Academic quiz for 15-21 year olds preparing for examinations
+// Structure: 5 Science/Math + 5 History/Geography + 5 Current Events = 15 questions per level
 
 export const mockQuestions = {
   Simple: [
+    // Science & Math (Questions 1-5)
     {
       id: 1,
       question: "What is the chemical formula for water?",
@@ -11,80 +13,105 @@ export const mockQuestions = {
     },
     {
       id: 2,
-      question: "Which organelle is known as the 'powerhouse of the cell'?",
-      options: ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+      question: "What is 12 × 8?",
+      options: ["94", "96", "98", "100"],
       correctAnswer: 1,
-      explanation: "Mitochondria are called the 'powerhouse of the cell' because they produce ATP (energy) through cellular respiration."
+      explanation: "12 × 8 = 96. This is basic multiplication."
     },
     {
       id: 3,
-      question: "What is the square root of 64?",
-      options: ["6", "8", "7", "9"],
+      question: "Which organ pumps blood throughout the human body?",
+      options: ["Brain", "Heart", "Liver", "Lungs"],
       correctAnswer: 1,
-      explanation: "√64 = 8, because 8 × 8 = 64."
+      explanation: "The heart pumps blood throughout the body, delivering oxygen and nutrients to all tissues."
     },
     {
       id: 4,
-      question: "What is the acceleration due to gravity on Earth?",
-      options: ["9.8 m/s²", "10.8 m/s²", "8.9 m/s²", "9.6 m/s²"],
-      correctAnswer: 0,
-      explanation: "The acceleration due to gravity on Earth is approximately 9.8 m/s² or 9.81 m/s² to be more precise."
+      question: "What is 15% of 100?",
+      options: ["10", "15", "20", "25"],
+      correctAnswer: 1,
+      explanation: "15% of 100 = (15/100) × 100 = 15."
     },
     {
       id: 5,
-      question: "Which gas makes up approximately 78% of Earth's atmosphere?",
-      options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      question: "Which planet is known as the 'Red Planet'?",
+      options: ["Venus", "Mars", "Jupiter", "Saturn"],
       correctAnswer: 1,
-      explanation: "Nitrogen (N₂) makes up about 78% of Earth's atmosphere, while oxygen makes up about 21%."
+      explanation: "Mars is called the 'Red Planet' due to iron oxide (rust) on its surface giving it a reddish appearance."
     },
+    
+    // History & Geography (Questions 6-10)
     {
       id: 6,
-      question: "What is the periodic table symbol for sodium?",
-      options: ["So", "Na", "S", "Sd"],
+      question: "Which city is the capital of Australia?",
+      options: ["Sydney", "Canberra", "Melbourne", "Perth"],
       correctAnswer: 1,
-      explanation: "Na is the symbol for sodium, derived from the Latin word 'natrium'. Sodium has atomic number 11."
+      explanation: "Canberra is the capital city of Australia, located between Sydney and Melbourne."
     },
     {
       id: 7,
-      question: "In which year did World War II begin?",
-      options: ["1938", "1939", "1940", "1941"],
+      question: "In which year did World War I end?",
+      options: ["1917", "1918", "1919", "1920"],
       correctAnswer: 1,
-      explanation: "World War II began on September 1, 1939, when Germany invaded Poland."
+      explanation: "World War I ended on November 11, 1918, when Germany signed the armistice agreement."
     },
     {
       id: 8,
-      question: "What is the smallest unit of matter?",
-      options: ["Molecule", "Atom", "Electron", "Proton"],
+      question: "Which is the longest river in the world?",
+      options: ["Amazon", "Nile", "Mississippi", "Yangtze"],
       correctAnswer: 1,
-      explanation: "An atom is the smallest unit of matter that retains the properties of an element."
+      explanation: "The Nile River is generally considered the longest river in the world at approximately 6,650 kilometers."
     },
     {
       id: 9,
-      question: "Which planet is closest to the Sun?",
-      options: ["Venus", "Mercury", "Earth", "Mars"],
+      question: "Who was the first President of the United States?",
+      options: ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
       correctAnswer: 1,
-      explanation: "Mercury is the closest planet to the Sun, with an average distance of about 58 million kilometers."
+      explanation: "George Washington was the first President of the United States, serving from 1789 to 1797."
     },
     {
       id: 10,
-      question: "What is 3² + 4²?",
-      options: ["25", "24", "23", "26"],
-      correctAnswer: 0,
-      explanation: "3² + 4² = 9 + 16 = 25. This follows the Pythagorean theorem for a 3-4-5 right triangle."
+      question: "Which continent is the largest by area?",
+      options: ["Africa", "Asia", "North America", "Europe"],
+      correctAnswer: 1,
+      explanation: "Asia is the largest continent by both area and population, covering about 30% of Earth's land area."
     },
+    
+    // Current Events (Questions 11-15)
     {
       id: 11,
-      question: "What type of bond holds water molecules together?",
-      options: ["Ionic bond", "Hydrogen bond", "Covalent bond", "Metallic bond"],
+      question: "Which social media platform was acquired by Elon Musk in 2022?",
+      options: ["Facebook", "Twitter", "Instagram", "TikTok"],
       correctAnswer: 1,
-      explanation: "Hydrogen bonds hold water molecules together, creating water's unique properties like high surface tension."
+      explanation: "Elon Musk acquired Twitter in October 2022 for approximately $44 billion and later rebranded it to 'X'."
     },
     {
       id: 12,
-      question: "Who developed the laws of motion?",
-      options: ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
+      question: "Which country hosted the 2024 Summer Olympics?",
+      options: ["Japan", "France", "USA", "Australia"],
       correctAnswer: 1,
-      explanation: "Sir Isaac Newton formulated the three laws of motion, fundamental principles of classical mechanics."
+      explanation: "France hosted the 2024 Summer Olympics in Paris from July 26 to August 11, 2024."
+    },
+    {
+      id: 13,
+      question: "What does 'AI' stand for in technology?",
+      options: ["Advanced Intelligence", "Artificial Intelligence", "Automated Intelligence", "Applied Intelligence"],
+      correctAnswer: 1,
+      explanation: "AI stands for Artificial Intelligence, referring to machine systems that can perform tasks typically requiring human intelligence."
+    },
+    {
+      id: 14,
+      question: "Which company developed ChatGPT?",
+      options: ["Google", "OpenAI", "Microsoft", "Meta"],
+      correctAnswer: 1,
+      explanation: "OpenAI developed ChatGPT, a large language model chatbot launched in November 2022."
+    },
+    {
+      id: 15,
+      question: "Which global event significantly impacted worldwide travel in 2020-2022?",
+      options: ["Olympics", "COVID-19 Pandemic", "World Cup", "Climate Summit"],
+      correctAnswer: 1,
+      explanation: "The COVID-19 pandemic significantly restricted global travel with lockdowns, quarantines, and border closures worldwide."
     }
   ],
   Medium: [
