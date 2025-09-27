@@ -11,10 +11,10 @@ const Experience = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-4">
+            <h2 className="text-4xl md:text-5xl font-light text-blue-900 mb-4">
               Professional Experience
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-blue-700 max-w-2xl mx-auto">
               A comprehensive journey through leading financial institutions, educational organizations, and technology companies, delivering enterprise-scale database solutions.
             </p>
           </div>
