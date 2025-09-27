@@ -83,12 +83,15 @@ const QuizScreen = ({ quizState, setQuizState }) => {
 
   const handlePreviousQuestion = () => {
     if (quizState.currentQuestion > 0) {
+      const newCurrentQuestion = quizState.currentQuestion - 1;
       setQuizState({
         ...quizState,
-        currentQuestion: quizState.currentQuestion - 1
+        currentQuestion: newCurrentQuestion
       });
       // Set the previously selected answer if any
-      setSelectedAnswer(quizState.answers[quizState.currentQuestion - 1] || null);
+      const previousAnswer = quizState.answers[newCurrentQuestion];
+      console.log(`Going back to question ${newCurrentQuestion + 1}, previous answer was: ${previousAnswer}`);
+      setSelectedAnswer(previousAnswer !== undefined ? previousAnswer : null);
     }
   };
 
