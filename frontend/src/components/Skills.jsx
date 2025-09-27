@@ -9,7 +9,7 @@ const Skills = () => {
     const icons = {
       'Database Management': Database,
       'Cloud Platforms': Cloud,
-      'Big Data & Analytics': BarChart3,
+      'AI, Big Data & Analytics': BarChart3,
       'Data Integration': ArrowLeftRight,
       'Programming & Scripting': Code,
       'Tools & Platforms': Settings
