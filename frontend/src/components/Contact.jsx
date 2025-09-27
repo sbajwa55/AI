@@ -156,6 +156,32 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Success Message */}
+                  {submitStatus === 'success' && (
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                      <div className="flex items-center gap-2 text-green-800">
+                        <CheckCircle size={20} />
+                        <span className="font-medium">Message sent successfully!</span>
+                      </div>
+                      <p className="text-green-700 text-sm mt-1">
+                        Thank you for reaching out. I'll get back to you soon.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Error Message */}
+                  {submitStatus === 'error' && (
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                      <div className="flex items-center gap-2 text-red-800">
+                        <AlertCircle size={20} />
+                        <span className="font-medium">Message failed to send</span>
+                      </div>
+                      <p className="text-red-700 text-sm mt-1">
+                        Please try again or contact me directly via email.
+                      </p>
+                    </div>
+                  )}
+
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-blue-800 mb-2">Name</label>
@@ -165,6 +191,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="Your full name"
                         required
+                        disabled={isSubmitting}
                         className="bg-white border-blue-300"
                       />
                     </div>
@@ -177,6 +204,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
                         required
+                        disabled={isSubmitting}
                         className="bg-white border-blue-300"
                       />
                     </div>
@@ -190,7 +218,8 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="What would you like to discuss?"
                       required
-                      className="bg-white border-slate-300"
+                      disabled={isSubmitting}
+                      className="bg-white border-blue-300"
                     />
                   </div>
                   
@@ -203,16 +232,18 @@ const Contact = () => {
                       placeholder="Tell me about your project or questions..."
                       rows={5}
                       required
-                      className="bg-white border-slate-300 resize-none"
+                      disabled={isSubmitting}
+                      className="bg-white border-blue-300 resize-none"
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-blue-800 hover:bg-blue-700 text-white py-3 transition-all duration-300 hover:scale-105"
+                    disabled={isSubmitting}
+                    className="w-full bg-blue-800 hover:bg-blue-700 text-white py-3 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Send size={18} className="mr-2" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
               </CardContent>
