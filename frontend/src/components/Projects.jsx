@@ -75,23 +75,23 @@ const Projects = () => {
               return (
                 <Card 
                   key={project.id}
-                  className="bg-white border-slate-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
+                  className="bg-white border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
                 >
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-3">
-                          <div className="p-2 bg-slate-100 rounded-lg group-hover:bg-slate-800 transition-colors duration-300">
+                          <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-800 transition-colors duration-300">
                             <IconComponent 
                               size={20} 
-                              className="text-slate-600 group-hover:text-white transition-colors duration-300" 
+                              className="text-blue-600 group-hover:text-white transition-colors duration-300" 
                             />
                           </div>
                           <Badge className={`${getCategoryColor(project.category)} text-xs px-2 py-1 border`}>
                             {project.category}
                           </Badge>
                         </div>
-                        <CardTitle className="text-xl text-slate-800 group-hover:text-slate-900 transition-colors leading-tight">
+                        <CardTitle className="text-xl text-blue-900 group-hover:text-blue-800 transition-colors leading-tight">
                           {project.title}
                         </CardTitle>
                       </div>
@@ -99,7 +99,7 @@ const Projects = () => {
                   </CardHeader>
 
                   <CardContent className="pt-0">
-                    <p className="text-slate-600 mb-4 leading-relaxed">
+                    <p className="text-blue-700 mb-4 leading-relaxed">
                       {project.description}
                     </p>
 
