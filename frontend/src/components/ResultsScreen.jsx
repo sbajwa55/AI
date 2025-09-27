@@ -17,8 +17,8 @@ const ResultsScreen = ({ quizState, setQuizState }) => {
       return;
     }
 
-    // Calculate results
-    const questions = mockQuestions[quizState.difficulty] || mockQuestions.Simple;
+    // Calculate results using the same questions that were used in the quiz
+    const questions = quizState.generatedQuestions || mockQuestions[quizState.difficulty] || mockQuestions.Simple;
     const timeTaken = Math.floor((new Date(quizState.endTime) - new Date(quizState.startTime)) / 1000);
     
     let correctCount = 0;
