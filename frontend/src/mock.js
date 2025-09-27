@@ -1,90 +1,90 @@
-// Mock data for GKQA app - will be replaced with AI-generated questions later
+// Mock data for GKQA app - Academic quiz for 15-21 year olds preparing for examinations
 
 export const mockQuestions = {
   Simple: [
     {
       id: 1,
-      question: "What is the capital of France?",
-      options: ["London", "Paris", "Berlin", "Rome"],
+      question: "What is the chemical formula for water?",
+      options: ["H₂O₂", "H₂O", "HO₂", "H₃O"],
       correctAnswer: 1,
-      explanation: "Paris is the capital and largest city of France, known for landmarks like the Eiffel Tower and Louvre Museum."
+      explanation: "Water has the chemical formula H₂O, consisting of two hydrogen atoms bonded to one oxygen atom."
     },
     {
       id: 2,
-      question: "Which is the longest river in the world?",
-      options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      question: "Which organelle is known as the 'powerhouse of the cell'?",
+      options: ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
       correctAnswer: 1,
-      explanation: "The Nile River is generally considered the longest river in the world at approximately 6,650 kilometers."
+      explanation: "Mitochondria are called the 'powerhouse of the cell' because they produce ATP (energy) through cellular respiration."
     },
     {
       id: 3,
-      question: "What is 7 + 5?",
-      options: ["11", "12", "13", "14"],
+      question: "What is the square root of 64?",
+      options: ["6", "8", "7", "9"],
       correctAnswer: 1,
-      explanation: "7 + 5 = 12. This is basic addition."
+      explanation: "√64 = 8, because 8 × 8 = 64."
     },
     {
       id: 4,
-      question: "Who painted the Mona Lisa?",
-      options: ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
-      correctAnswer: 1,
-      explanation: "Leonardo da Vinci painted the Mona Lisa between 1503-1519. It's housed in the Louvre Museum in Paris."
+      question: "What is the acceleration due to gravity on Earth?",
+      options: ["9.8 m/s²", "10.8 m/s²", "8.9 m/s²", "9.6 m/s²"],
+      correctAnswer: 0,
+      explanation: "The acceleration due to gravity on Earth is approximately 9.8 m/s² or 9.81 m/s² to be more precise."
     },
     {
       id: 5,
-      question: "Which is the largest country in the world by area?",
-      options: ["China", "Canada", "Russia", "United States"],
-      correctAnswer: 2,
-      explanation: "Russia is the largest country in the world by land area, covering about 17.1 million square kilometers."
+      question: "Which gas makes up approximately 78% of Earth's atmosphere?",
+      options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      correctAnswer: 1,
+      explanation: "Nitrogen (N₂) makes up about 78% of Earth's atmosphere, while oxygen makes up about 21%."
     },
     {
       id: 6,
-      question: "What is the fastest land animal?",
-      options: ["Lion", "Cheetah", "Horse", "Leopard"],
+      question: "What is the periodic table symbol for sodium?",
+      options: ["So", "Na", "S", "Sd"],
       correctAnswer: 1,
-      explanation: "The cheetah is the fastest land animal, capable of reaching speeds up to 70 mph (112 km/h)."
+      explanation: "Na is the symbol for sodium, derived from the Latin word 'natrium'. Sodium has atomic number 11."
     },
     {
       id: 7,
-      question: "How many continents are there?",
-      options: ["5", "6", "7", "8"],
-      correctAnswer: 2,
-      explanation: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
+      question: "In which year did World War II begin?",
+      options: ["1938", "1939", "1940", "1941"],
+      correctAnswer: 1,
+      explanation: "World War II began on September 1, 1939, when Germany invaded Poland."
     },
     {
       id: 8,
-      question: "What is the currency of the United States?",
-      options: ["Pound", "Euro", "Dollar", "Yen"],
-      correctAnswer: 2,
-      explanation: "The US Dollar (USD) is the official currency of the United States."
+      question: "What is the smallest unit of matter?",
+      options: ["Molecule", "Atom", "Electron", "Proton"],
+      correctAnswer: 1,
+      explanation: "An atom is the smallest unit of matter that retains the properties of an element."
     },
     {
       id: 9,
-      question: "Which sport is played at Wimbledon?",
-      options: ["Football", "Tennis", "Cricket", "Golf"],
+      question: "Which planet is closest to the Sun?",
+      options: ["Venus", "Mercury", "Earth", "Mars"],
       correctAnswer: 1,
-      explanation: "Tennis is played at Wimbledon, which is one of the four Grand Slam tennis tournaments."
+      explanation: "Mercury is the closest planet to the Sun, with an average distance of about 58 million kilometers."
     },
     {
       id: 10,
-      question: "What is 6 × 4?",
-      options: ["20", "24", "28", "22"],
-      correctAnswer: 1,
-      explanation: "6 × 4 = 24. This is basic multiplication."
+      question: "What is 3² + 4²?",
+      options: ["25", "24", "23", "26"],
+      correctAnswer: 0,
+      explanation: "3² + 4² = 9 + 16 = 25. This follows the Pythagorean theorem for a 3-4-5 right triangle."
     },
     {
       id: 11,
-      question: "Which holiday celebrates the birth of Jesus Christ?",
-      options: ["Easter", "Christmas", "Halloween", "New Year"],
+      question: "What type of bond holds water molecules together?",
+      options: ["Ionic bond", "Hydrogen bond", "Covalent bond", "Metallic bond"],
       correctAnswer: 1,
-      explanation: "Christmas celebrates the birth of Jesus Christ and is observed on December 25th by Christians worldwide."
+      explanation: "Hydrogen bonds hold water molecules together, creating water's unique properties like high surface tension."
     },
     {
       id: 12,
-      question: "What do bees make?",
-      options: ["Milk", "Honey", "Butter", "Cheese"],
+      question: "Who developed the laws of motion?",
+      options: ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
       correctAnswer: 1,
-      explanation: "Bees make honey from nectar collected from flowers, which they store in their hives."
+      explanation: "Sir Isaac Newton formulated the three laws of motion, fundamental principles of classical mechanics."
     }
   ],
   Medium: [
