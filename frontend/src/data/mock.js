@@ -168,8 +168,16 @@ export const testimonials = [
 ];
 
 export const certifications = [
-  "Oracle Certified Professional in Database Administration",
-  "Python PCEP – Certified Entry-Level Python Programmer"
+  {
+    name: "Oracle Certified Professional in Database Administration",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/90jxigvf_OCP.jpg",
+    shortName: "OCP DBA"
+  },
+  {
+    name: "Python PCEP – Certified Entry-Level Python Programmer", 
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
+    shortName: "PCEP"
+  }
 ];
 
 export const education = {
