@@ -152,7 +152,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="Your full name"
                         required
-                        className="bg-white border-slate-300"
+                        className="bg-white border-blue-300"
                       />
                     </div>
                     <div>
@@ -164,7 +164,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
                         required
-                        className="bg-white border-slate-300"
+                        className="bg-white border-blue-300"
                       />
                     </div>
                   </div>
