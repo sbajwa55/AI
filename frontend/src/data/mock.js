@@ -21,8 +21,8 @@ export const skills = [
     items: ["Oracle Cloud Infrastructure", "AWS", "Microsoft Azure", "Google Cloud", "Database Cloud Service"]
   },
   {
-    category: "Big Data & Analytics",
-    items: ["Hadoop", "Spark", "Kafka", "HDFS", "Impala", "Kudu", "Tableau", "Cognos", "Splunk"]
+    category: "AI, Big Data & Analytics",
+    items: ["AI Generalist", "ML/DL", "Hadoop", "Spark", "Impala", "Kudu", "Tableau", "Cognos", "Splunk"]
   },
   {
     category: "Data Integration",
