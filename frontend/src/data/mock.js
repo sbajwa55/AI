@@ -186,3 +186,83 @@ export const education = {
   year: "1996",
   focus: "Data Structures and Networks"
 };
+
+export const careerHighlights = [
+  {
+    year: "2025",
+    title: "Oracle Database Engineer at PNC Bank",
+    description: "Managing 500+ Oracle databases through OEM, implementing Golden Gate replication across enterprise systems",
+    type: "role",
+    icon: "briefcase"
+  },
+  {
+    year: "2024",
+    title: "Enterprise Data Warehouse Migration to Snowflake",
+    description: "Led complete migration of multi-terabyte Oracle data warehouse to Snowflake at BNY Mellon, achieving zero downtime",
+    type: "achievement",
+    icon: "cloud"
+  },
+  {
+    year: "2023",
+    title: "Vice President Role at BNY Mellon",
+    description: "Promoted to VP level, leading data engineering initiatives and cloud migrations",
+    type: "role",
+    icon: "award"
+  },
+  {
+    year: "2022",
+    title: "Container-Based Data Solutions with Kubernetes",
+    description: "Implemented modern container-based applications using Storm and Kubernetes for enterprise clients",
+    type: "achievement",
+    icon: "server"
+  },
+  {
+    year: "2020",
+    title: "Big Data Lake Implementation",
+    description: "Built Apache Hadoop-based data lake at University of Pittsburgh with 1TB+ daily ingestion capacity",
+    type: "achievement",
+    icon: "database"
+  },
+  {
+    year: "2018",
+    title: "Real-Time Data Replication System",
+    description: "Implemented Qlik Replicate for real-time data synchronization replacing legacy Golden Gate systems",
+    type: "achievement",
+    icon: "refresh"
+  },
+  {
+    year: "2015",
+    title: "Oracle Exadata Implementation",
+    description: "Designed and implemented Decision Support Systems on Oracle Exadata ¼ rack, upgraded to 19c",
+    type: "achievement",
+    icon: "zap"
+  },
+  {
+    year: "2010",
+    title: "Cloud Migration Pioneer",
+    description: "Successfully migrated 8 OLTP databases to cloud platforms (OCI, Azure, AWS) at University of Pittsburgh",
+    type: "achievement",
+    icon: "cloud-upload"
+  },
+  {
+    year: "2005",
+    title: "Senior Oracle DBA at University of Pittsburgh",
+    description: "17-year tenure managing enterprise database systems, datacenter migrations, and implementing cutting-edge technologies",
+    type: "role",
+    icon: "briefcase"
+  },
+  {
+    year: "2000",
+    title: "Senior Oracle DBA at PNC Financial Services",
+    description: "Implemented 24x7 shared databases on RAC, n-tier, and clustered disk environments",
+    type: "role",
+    icon: "briefcase"
+  },
+  {
+    year: "1996",
+    title: "Computer Science Degree",
+    description: "Graduated with BS in Computer Information Science from University of Pittsburgh, specializing in data structures and networks",
+    type: "education",
+    icon: "graduation-cap"
+  }
+];
