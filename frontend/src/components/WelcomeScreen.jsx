@@ -46,7 +46,7 @@ const WelcomeScreen = ({ quizState, setQuizState }) => {
           </p>
           
           <p className="text-gray-500 max-w-md mx-auto leading-relaxed">
-            Test your knowledge across History, Math, Science, Geography, Culture, Sports, and Politics with our AI-powered quiz platform.
+            Test your world knowledge across History, Math, Science, Geography, Culture, Sports, and Politics with our AI-powered quiz platform.
           </p>
         </CardHeader>
 
