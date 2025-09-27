@@ -10,10 +10,10 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-4">
+            <h2 className="text-4xl md:text-5xl font-light text-blue-900 mb-4">
               About Me
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-blue-700 max-w-2xl mx-auto">
               A seasoned professional with over two decades of experience in transforming complex data challenges into strategic business solutions.
             </p>
           </div>
