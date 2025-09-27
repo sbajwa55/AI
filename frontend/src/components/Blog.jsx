@@ -53,17 +53,34 @@ const Blog = () => {
                   </div>
                 </div>
 
-                <Button 
-                  variant="outline"
-                  className="border-blue-600 text-blue-700 hover:bg-blue-50"
-                  onClick={() => {
-                    // Placeholder for future functionality
-                    alert("Blog articles coming soon! Connect with me on LinkedIn for updates.");
-                  }}
-                >
-                  <span className="mr-2">Get Notified</span>
-                  <ArrowRight size={16} />
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    variant="outline"
+                    className="border-blue-600 text-blue-700 hover:bg-blue-50"
+                    onClick={() => {
+                      // Placeholder for future functionality
+                      alert("Blog articles coming soon! Connect with me on LinkedIn for updates.");
+                    }}
+                  >
+                    <span className="mr-2">Get Notified</span>
+                    <ArrowRight size={16} />
+                  </Button>
+                  
+                  <Button 
+                    className="bg-blue-600 hover:bg-blue-700 text-white"
+                    asChild
+                  >
+                    <a 
+                      href="https://gkquiz-app.emergent.host/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <span>View GKQA App</span>
+                      <ArrowRight size={16} />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
