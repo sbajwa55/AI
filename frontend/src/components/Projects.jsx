@@ -110,7 +110,7 @@ const Projects = () => {
                           <Badge
                             key={index}
                             variant="secondary"
-                            className="bg-slate-100 text-slate-700 text-xs px-2 py-1 font-normal"
+                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 font-normal"
                           >
                             {tech}
                           </Badge>
