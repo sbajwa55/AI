@@ -145,7 +145,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">Name</label>
+                      <label className="block text-sm font-medium text-blue-800 mb-2">Name</label>
                       <Input
                         name="name"
                         value={formData.name}
