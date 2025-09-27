@@ -54,24 +54,24 @@ const Experience = () => {
                 </CardHeader>
 
                 <CardContent className="pt-0">
-                  <p className="text-slate-600 mb-4 leading-relaxed">
+                  <p className="text-blue-700 mb-4 leading-relaxed">
                     {exp.description}
                   </p>
                   
                   {exp.achievements && exp.achievements.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 mb-3 uppercase tracking-wide">
+                      <h4 className="text-sm font-semibold text-blue-900 mb-3 uppercase tracking-wide">
                         Key Achievements
                       </h4>
                       <div className="space-y-2">
                         {exp.achievements.map((achievement, achievementIndex) => (
                           <div 
                             key={achievementIndex}
-                            className="flex items-start gap-3 text-slate-600"
+                            className="flex items-start gap-3 text-blue-700"
                           >
                             <ChevronRight 
                               size={16} 
-                              className="text-slate-400 mt-0.5 flex-shrink-0" 
+                              className="text-blue-500 mt-0.5 flex-shrink-0" 
                             />
                             <span className="text-sm leading-relaxed">{achievement}</span>
                           </div>
