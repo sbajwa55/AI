@@ -3,6 +3,7 @@ import Header from './Header';
 import Hero from './Hero';
 import About from './About';
 import Skills from './Skills';
+import CareerTimeline from './CareerTimeline';
 import Experience from './Experience';
 import Projects from './Projects';
 import Testimonials from './Testimonials';
@@ -17,6 +18,7 @@ const Portfolio = () => {
         <Hero />
         <About />
         <Skills />
+        <CareerTimeline />
         <Experience />
         <Projects />
         <Testimonials />
