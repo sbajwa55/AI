@@ -137,9 +137,9 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="bg-slate-50 border-slate-200">
+            <Card className="bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-xl text-slate-800">Send a Message</CardTitle>
+                <CardTitle className="text-xl text-blue-900">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
