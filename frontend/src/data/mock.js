@@ -14,7 +14,7 @@ export const personalInfo = {
 export const skills = [
   {
     category: "Database Management",
-    items: ["Oracle 7.2-23c", "Exadata", "RAC", "Data Guard", "Snowflake", "SQL Server", "MySQL", "PostgreSQL"]
+    items: ["Oracle 7.2-23c", "Exadata", "RAC", "Data Guard", "Snowflake", "SQL Server", "MySQL"]
   },
   {
     category: "Cloud Platforms", 
