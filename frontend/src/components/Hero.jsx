@@ -87,7 +87,9 @@ const Hero = () => {
                 download="Sandeep_Bajwa_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2"
               >
+                <Download size={20} />
                 Download Resume
               </a>
             </Button>
