@@ -744,7 +744,6 @@ export const questionBank = {
     }
   ]
 };
-};
 
 // Question Management System for 24-hour no-repeat and randomization
 export class QuestionManager {
