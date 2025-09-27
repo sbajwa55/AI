@@ -90,87 +90,87 @@ export const mockQuestions = {
   Medium: [
     {
       id: 1,
-      question: "Who wrote the famous novel '1984'?",
-      options: ["George Orwell", "Aldous Huxley", "Ray Bradbury", "H.G. Wells"],
-      correctAnswer: 0,
-      explanation: "George Orwell wrote '1984', a dystopian novel published in 1949 about totalitarian surveillance."
+      question: "What is the molecular geometry of methane (CH₄)?",
+      options: ["Linear", "Tetrahedral", "Trigonal planar", "Bent"],
+      correctAnswer: 1,
+      explanation: "Methane has a tetrahedral molecular geometry with bond angles of 109.5° due to sp³ hybridization of carbon."
     },
     {
       id: 2,
-      question: "What is the square root of 169?",
-      options: ["11", "13", "15", "17"],
-      correctAnswer: 1,
-      explanation: "The square root of 169 is 13, because 13 × 13 = 169."
+      question: "What is the derivative of x³ with respect to x?",
+      options: ["3x²", "x²", "3x³", "3x"],
+      correctAnswer: 0,
+      explanation: "Using the power rule, d/dx(x³) = 3x². The exponent becomes the coefficient and the new exponent is reduced by 1."
     },
     {
       id: 3,
-      question: "In which year did World War II end?",
-      options: ["1944", "1945", "1946", "1947"],
+      question: "Which organelle contains the cell's genetic material?",
+      options: ["Mitochondria", "Nucleus", "Ribosome", "Endoplasmic reticulum"],
       correctAnswer: 1,
-      explanation: "World War II ended in 1945 with the surrender of Japan on September 2, 1945."
+      explanation: "The nucleus contains the cell's DNA (genetic material) and controls cellular activities."
     },
     {
       id: 4,
-      question: "What is the chemical symbol for silver?",
-      options: ["Si", "Ag", "Au", "Sr"],
-      correctAnswer: 1,
-      explanation: "Ag is the chemical symbol for silver, derived from the Latin word 'argentum'."
+      question: "What is the pH of a solution with [H⁺] = 1 × 10⁻⁵ M?",
+      options: ["5", "9", "-5", "10"],
+      correctAnswer: 0,
+      explanation: "pH = -log[H⁺] = -log(1 × 10⁻⁵) = -(-5) = 5. This is an acidic solution."
     },
     {
       id: 5,
-      question: "Which mountain range contains Mount Everest?",
-      options: ["Andes", "Rocky Mountains", "Himalayas", "Alps"],
-      correctAnswer: 2,
-      explanation: "Mount Everest is located in the Himalayas on the border between Nepal and Tibet."
+      question: "According to Newton's second law, F = ma. If mass doubles and acceleration halves, force:",
+      options: ["Doubles", "Remains the same", "Halves", "Quadruples"],
+      correctAnswer: 1,
+      explanation: "F = ma. If m becomes 2m and a becomes a/2, then F = (2m)(a/2) = ma, so force remains the same."
     },
     {
       id: 6,
-      question: "Who was the first person to walk on the moon?",
-      options: ["Buzz Aldrin", "Neil Armstrong", "John Glenn", "Yuri Gagarin"],
-      correctAnswer: 1,
-      explanation: "Neil Armstrong was the first person to walk on the moon during the Apollo 11 mission on July 20, 1969."
+      question: "In the electromagnetic spectrum, which has the longest wavelength?",
+      options: ["X-rays", "Visible light", "Radio waves", "Gamma rays"],
+      correctAnswer: 2,
+      explanation: "Radio waves have the longest wavelength in the electromagnetic spectrum, ranging from millimeters to kilometers."
     },
     {
       id: 7,
-      question: "Which country has won the most FIFA World Cups?",
-      options: ["Germany", "Argentina", "Brazil", "Italy"],
-      correctAnswer: 2,
-      explanation: "Brazil has won the FIFA World Cup 5 times (1958, 1962, 1970, 1994, 2002)."
+      question: "What is the process by which DNA makes an identical copy of itself?",
+      options: ["Transcription", "Replication", "Translation", "Mutation"],
+      correctAnswer: 1,
+      explanation: "DNA replication is the process where DNA makes an identical copy of itself during cell division."
     },
     {
       id: 8,
-      question: "What gas do plants absorb from the atmosphere during photosynthesis?",
-      options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-      correctAnswer: 1,
-      explanation: "Plants absorb carbon dioxide from the atmosphere and use it to make glucose during photosynthesis."
+      question: "What is the molar mass of CO₂ (Carbon = 12 g/mol, Oxygen = 16 g/mol)?",
+      options: ["28 g/mol", "32 g/mol", "44 g/mol", "48 g/mol"],
+      correctAnswer: 2,
+      explanation: "CO₂ molar mass = 12 + (2 × 16) = 12 + 32 = 44 g/mol."
     },
     {
       id: 9,
-      question: "Which country is known as the 'Land of the Rising Sun'?",
-      options: ["China", "Japan", "South Korea", "Thailand"],
+      question: "Which French revolution began in 1789?",
+      options: ["Industrial Revolution", "French Revolution", "Scientific Revolution", "Agricultural Revolution"],
       correctAnswer: 1,
-      explanation: "Japan is known as the 'Land of the Rising Sun' because of its name's meaning and eastern location."
+      explanation: "The French Revolution began in 1789, leading to major political and social changes in France and Europe."
     },
     {
       id: 10,
-      question: "What is 25% of 400?",
-      options: ["75", "100", "125", "150"],
-      correctAnswer: 1,
-      explanation: "25% of 400 = (25/100) × 400 = 100."
+      question: "What is the quadratic formula for ax² + bx + c = 0?",
+      options: ["x = -b ± √(b² - 4ac) / 2a", "x = b ± √(b² + 4ac) / 2a", "x = -b ± √(b² + 4ac) / 2a", "x = b ± √(b² - 4ac) / 2a"],
+      correctAnswer: 0,
+      explanation: "The quadratic formula is x = (-b ± √(b² - 4ac)) / 2a, used to solve quadratic equations."
     },
     {
       id: 11,
-      question: "Which dance originated in Argentina?",
-      options: ["Salsa", "Tango", "Flamenco", "Waltz"],
+      question: "What type of reaction is photosynthesis?",
+      options: ["Catabolic", "Anabolic", "Exothermic", "Spontaneous"],
       correctAnswer: 1,
-      explanation: "Tango originated in Argentina in the late 19th century, particularly in Buenos Aires."
+      explanation: "Photosynthesis is an anabolic reaction because it builds complex molecules (glucose) from simpler ones (CO₂ and H₂O)."
     },
     {
       id: 12,
-      question: "Who was known as the 'Iron Lady'?",
-      options: ["Queen Elizabeth II", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
-      correctAnswer: 1,
-      explanation: "Margaret Thatcher was known as the 'Iron Lady' due to her uncompromising politics and leadership style as UK Prime Minister."
+      question: "What is the speed of light in vacuum?",
+      options: ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10⁹ m/s", "3 × 10⁷ m/s"],
+      correctAnswer: 0,
+      explanation: "The speed of light in vacuum is approximately 3 × 10⁸ m/s or 299,792,458 m/s exactly."
     }
   ],
   Advanced: [
