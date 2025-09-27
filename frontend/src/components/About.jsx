@@ -21,8 +21,8 @@ const About = () => {
           <div className="grid md:grid-2 lg:grid-cols-2 gap-12">
             {/* Professional Story */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">Professional Journey</h3>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-6">Professional Journey</h3>
+              <div className="space-y-4 text-blue-700 leading-relaxed">
                 <p>
                   With over 25 years of experience in the data engineering landscape, I've had the privilege of working with 
                   international companies across diverse industries including finance, healthcare, education, and manufacturing.
