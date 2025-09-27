@@ -30,7 +30,7 @@ export const skills = [
   },
   {
     category: "Programming & Scripting",
-    items: ["PL/SQL", "Python", "Java", "Shell Scripting", "SQL", "Unix/Linux Administration"]
+    items: ["PL/SQL", "Python", "Java", "C/C++", "Shell Scripting", "SQL", "Unix/Linux Administration"]
   },
   {
     category: "Tools & Platforms",
