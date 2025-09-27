@@ -94,18 +94,18 @@ const Contact = () => {
                 {contactMethods.map((method, index) => {
                   const IconComponent = method.icon;
                   return (
-                    <Card key={index} className="bg-slate-50 border-slate-200 hover:bg-slate-100 transition-colors duration-200">
+                    <Card key={index} className="bg-blue-50 border-blue-200 hover:bg-blue-100 transition-colors duration-200">
                       <CardContent className="p-4">
                         <a 
                           href={method.href}
-                          className="flex items-center gap-4 text-slate-700 hover:text-slate-900 transition-colors"
+                          className="flex items-center gap-4 text-blue-800 hover:text-blue-900 transition-colors"
                         >
                           <div className="p-2 bg-white rounded-lg">
-                            <IconComponent size={20} className="text-slate-600" />
+                            <IconComponent size={20} className="text-blue-600" />
                           </div>
                           <div>
                             <div className="font-medium">{method.label}</div>
-                            <div className="text-sm text-slate-600">{method.value}</div>
+                            <div className="text-sm text-blue-700">{method.value}</div>
                           </div>
                         </a>
                       </CardContent>
