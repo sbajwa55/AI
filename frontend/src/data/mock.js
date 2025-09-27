@@ -6,7 +6,7 @@ export const personalInfo = {
   location: "Cranberry Township, PA",
   email: "Bajwa_Sandeep@yahoo.com",
   phone: "(412) 260 1246",
-  linkedIn: "https://linkedin.com/in/sandeep-bajwa",
+  linkedIn: "https://www.linkedin.com/in/sandeep-bajwa-1809a31/",
   github: "https://github.com/sandeep-bajwa",
   summary: "Twenty-five years of experience working for international companies in a variety of industries, including finance, education, healthcare, and manufacturing. Proven expertise in database engineering, cloud migrations, and enterprise data solutions."
 };
