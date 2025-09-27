@@ -342,15 +342,15 @@ export const mockQuestions = {
 
 // Mock user results for demonstration
 export const mockResults = {
-  score: 8,
+  score: 11,
   totalQuestions: 15,
-  timeTaken: 450, // seconds
+  timeTaken: 480, // seconds
   difficulty: "Medium",
-  correctAnswers: [1, 2, 4, 5, 6, 8, 9, 11],
+  correctAnswers: [1, 2, 4, 5, 6, 7, 8, 10, 11, 13, 14],
   incorrectAnswers: [
     { questionId: 3, selectedAnswer: 2, correctAnswer: 1 },
-    { questionId: 7, selectedAnswer: 0, correctAnswer: 2 },
-    { questionId: 10, selectedAnswer: 3, correctAnswer: 1 },
-    { questionId: 12, selectedAnswer: 0, correctAnswer: 1 }
+    { questionId: 9, selectedAnswer: 0, correctAnswer: 1 },
+    { questionId: 12, selectedAnswer: 0, correctAnswer: 1 },
+    { questionId: 15, selectedAnswer: 2, correctAnswer: 1 }
   ]
 };
