@@ -156,7 +156,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">Email</label>
+                      <label className="block text-sm font-medium text-blue-800 mb-2">Email</label>
                       <Input
                         type="email"
                         name="email"
@@ -170,7 +170,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">Subject</label>
+                    <label className="block text-sm font-medium text-blue-800 mb-2">Subject</label>
                     <Input
                       name="subject"
                       value={formData.subject}
@@ -182,7 +182,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                    <label className="block text-sm font-medium text-blue-800 mb-2">Message</label>
                     <Textarea
                       name="message"
                       value={formData.message}
