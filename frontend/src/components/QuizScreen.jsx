@@ -9,18 +9,22 @@ import { mockQuestions } from "../mock";
 const QuizScreen = ({ quizState, setQuizState }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [timeElapsed, setTimeElapsed] = useState(0);
-  const [questions] = useState(() => {
-    // Generate questions once and store them in the quiz state if not already present
-    if (!quizState.generatedQuestions) {
+  const [questions, setQuestions] = useState([]);
+
+  // Generate questions once when component mounts
+  useEffect(() => {
+    if (!quizState.generatedQuestions && quizState.difficulty) {
       const newQuestions = mockQuestions[quizState.difficulty] || mockQuestions.Simple;
+      console.log('Generated questions for quiz:', newQuestions.length, 'questions');
+      setQuestions(newQuestions);
       setQuizState(prev => ({
         ...prev,
         generatedQuestions: newQuestions
       }));
-      return newQuestions;
+    } else if (quizState.generatedQuestions) {
+      setQuestions(quizState.generatedQuestions);
     }
-    return quizState.generatedQuestions;
-  });
+  }, [quizState.difficulty, quizState.generatedQuestions, setQuizState]);
   const navigate = useNavigate();
 
   // Timer effect
