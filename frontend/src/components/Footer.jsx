@@ -38,7 +38,7 @@ const Footer = () => {
               <p className="text-blue-200 mb-4 leading-relaxed">
                 {personalInfo.title}
               </p>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-blue-300 text-sm leading-relaxed">
                 Specializing in enterprise database solutions, cloud migrations, and data engineering 
                 with over 25 years of experience across finance, healthcare, education, and manufacturing industries.
               </p>
