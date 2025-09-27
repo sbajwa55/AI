@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Sandeep S. Bajwa",
   title: "Seasoned Data Engineer & Database Architecture Expert",
-  location: "Cranberry, PA",
+  location: "Cranberry Township, PA",
   email: "Bajwa_Sandeep@yahoo.com",
   phone: "(412) 260 1246",
   linkedIn: "https://linkedin.com/in/sandeep-bajwa",
