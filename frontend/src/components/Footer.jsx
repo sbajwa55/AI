@@ -35,7 +35,7 @@ const Footer = () => {
             {/* About Section */}
             <div className="lg:col-span-2">
               <h3 className="text-xl font-semibold mb-4">{personalInfo.name}</h3>
-              <p className="text-slate-300 mb-4 leading-relaxed">
+              <p className="text-blue-200 mb-4 leading-relaxed">
                 {personalInfo.title}
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
