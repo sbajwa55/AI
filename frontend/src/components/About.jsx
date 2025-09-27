@@ -64,31 +64,31 @@ const About = () => {
               </div>
 
               {/* Education */}
-              <Card className="bg-gradient-to-r from-slate-50 to-slate-100 border-slate-200">
+              <Card className="bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <GraduationCap className="text-slate-600 mt-1" size={24} />
+                    <GraduationCap className="text-blue-600 mt-1" size={24} />
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-1">Education</h4>
-                      <div className="text-slate-700 font-medium">{education.degree}</div>
-                      <div className="text-slate-600 text-sm">{education.school} • {education.year}</div>
-                      <div className="text-slate-600 text-sm mt-1">Focus: {education.focus}</div>
+                      <h4 className="font-semibold text-blue-900 mb-1">Education</h4>
+                      <div className="text-blue-800 font-medium">{education.degree}</div>
+                      <div className="text-blue-700 text-sm">{education.school} • {education.year}</div>
+                      <div className="text-blue-700 text-sm mt-1">Focus: {education.focus}</div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Certifications */}
-              <Card className="bg-gradient-to-r from-slate-50 to-slate-100 border-slate-200">
+              <Card className="bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Award className="text-slate-600 mt-1" size={24} />
+                    <Award className="text-blue-600 mt-1" size={24} />
                     <div>
-                      <h4 className="font-semibold text-slate-800 mb-3">Certifications</h4>
+                      <h4 className="font-semibold text-blue-900 mb-3">Certifications</h4>
                       <div className="space-y-2">
                         {certifications.map((cert, index) => (
-                          <div key={index} className="text-slate-600 text-sm flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full"></div>
+                          <div key={index} className="text-blue-700 text-sm flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                             {cert}
                           </div>
                         ))}
