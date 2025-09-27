@@ -90,87 +90,87 @@ export const mockQuestions = {
   Medium: [
     {
       id: 1,
-      question: "Who wrote the Indian National Anthem 'Jana Gana Mana'?",
-      options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Kavi Pradeep"],
+      question: "Who wrote the famous novel '1984'?",
+      options: ["George Orwell", "Aldous Huxley", "Ray Bradbury", "H.G. Wells"],
       correctAnswer: 0,
-      explanation: "Rabindranath Tagore wrote the Indian National Anthem 'Jana Gana Mana' in 1911."
+      explanation: "George Orwell wrote '1984', a dystopian novel published in 1949 about totalitarian surveillance."
     },
     {
       id: 2,
-      question: "What is the square root of 144?",
-      options: ["10", "12", "14", "16"],
+      question: "What is the square root of 169?",
+      options: ["11", "13", "15", "17"],
       correctAnswer: 1,
-      explanation: "The square root of 144 is 12, because 12 × 12 = 144."
+      explanation: "The square root of 169 is 13, because 13 × 13 = 169."
     },
     {
       id: 3,
-      question: "Which Mughal emperor built the Taj Mahal?",
-      options: ["Akbar", "Shah Jahan", "Humayun", "Aurangzeb"],
+      question: "In which year did World War II end?",
+      options: ["1944", "1945", "1946", "1947"],
       correctAnswer: 1,
-      explanation: "Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal between 1632 and 1648."
+      explanation: "World War II ended in 1945 with the surrender of Japan on September 2, 1945."
     },
     {
       id: 4,
-      question: "What is the chemical symbol for gold?",
-      options: ["Go", "Au", "Ag", "Gd"],
+      question: "What is the chemical symbol for silver?",
+      options: ["Si", "Ag", "Au", "Sr"],
       correctAnswer: 1,
-      explanation: "Au is the chemical symbol for gold, derived from the Latin word 'aurum'."
+      explanation: "Ag is the chemical symbol for silver, derived from the Latin word 'argentum'."
     },
     {
       id: 5,
-      question: "Which mountain range separates India from China?",
-      options: ["Western Ghats", "Eastern Ghats", "Himalayas", "Aravalli"],
+      question: "Which mountain range contains Mount Everest?",
+      options: ["Andes", "Rocky Mountains", "Himalayas", "Alps"],
       correctAnswer: 2,
-      explanation: "The Himalayas form the northern border of India and separate it from China and other neighboring countries."
+      explanation: "Mount Everest is located in the Himalayas on the border between Nepal and Tibet."
     },
     {
       id: 6,
-      question: "Who was the first President of India?",
-      options: ["Dr. A.P.J. Abdul Kalam", "Dr. Rajendra Prasad", "Dr. S. Radhakrishnan", "Zakir Husain"],
+      question: "Who was the first person to walk on the moon?",
+      options: ["Buzz Aldrin", "Neil Armstrong", "John Glenn", "Yuri Gagarin"],
       correctAnswer: 1,
-      explanation: "Dr. Rajendra Prasad was the first President of India, serving from 1950 to 1962."
+      explanation: "Neil Armstrong was the first person to walk on the moon during the Apollo 11 mission on July 20, 1969."
     },
     {
       id: 7,
-      question: "In which year did India win its first Cricket World Cup?",
-      options: ["1975", "1979", "1983", "1987"],
+      question: "Which country has won the most FIFA World Cups?",
+      options: ["Germany", "Argentina", "Brazil", "Italy"],
       correctAnswer: 2,
-      explanation: "India won its first Cricket World Cup in 1983 under the captaincy of Kapil Dev."
+      explanation: "Brazil has won the FIFA World Cup 5 times (1958, 1962, 1970, 1994, 2002)."
     },
     {
       id: 8,
-      question: "What is the process by which plants make food using sunlight?",
-      options: ["Respiration", "Photosynthesis", "Transpiration", "Germination"],
+      question: "What gas do plants absorb from the atmosphere during photosynthesis?",
+      options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
       correctAnswer: 1,
-      explanation: "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to make glucose and oxygen."
+      explanation: "Plants absorb carbon dioxide from the atmosphere and use it to make glucose during photosynthesis."
     },
     {
       id: 9,
-      question: "Which Indian state is known as 'God's Own Country'?",
-      options: ["Goa", "Kerala", "Himachal Pradesh", "Uttarakhand"],
+      question: "Which country is known as the 'Land of the Rising Sun'?",
+      options: ["China", "Japan", "South Korea", "Thailand"],
       correctAnswer: 1,
-      explanation: "Kerala is known as 'God's Own Country' due to its natural beauty, backwaters, and lush landscapes."
+      explanation: "Japan is known as the 'Land of the Rising Sun' because of its name's meaning and eastern location."
     },
     {
       id: 10,
-      question: "What is 15% of 200?",
-      options: ["25", "30", "35", "40"],
+      question: "What is 25% of 400?",
+      options: ["75", "100", "125", "150"],
       correctAnswer: 1,
-      explanation: "15% of 200 = (15/100) × 200 = 30."
+      explanation: "25% of 400 = (25/100) × 400 = 100."
     },
     {
       id: 11,
-      question: "Which dance form originated in Kerala?",
-      options: ["Bharatanatyam", "Kathakali", "Odissi", "Kuchipudi"],
+      question: "Which dance originated in Argentina?",
+      options: ["Salsa", "Tango", "Flamenco", "Waltz"],
       correctAnswer: 1,
-      explanation: "Kathakali is a classical dance form that originated in Kerala, known for its elaborate costumes and makeup."
+      explanation: "Tango originated in Argentina in the late 19th century, particularly in Buenos Aires."
     },
     {
       id: 12,
-      question: "Who is known as the 'Iron Man of India'?",
-      options: ["Mahatma Gandhi", "Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Lal Bahadur Shastri"],
+      question: "Who was known as the 'Iron Lady'?",
+      options: ["Queen Elizabeth II", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
       correctAnswer: 1,
-      explanation: "Sardar Vallabhbhai Patel is known as the 'Iron Man of India' for his role in uniting the princely states."
+      explanation: "Margaret Thatcher was known as the 'Iron Lady' due to her uncompromising politics and leadership style as UK Prime Minister."
     }
   ],
   Advanced: [
