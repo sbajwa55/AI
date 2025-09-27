@@ -116,7 +116,7 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="text-lg font-semibold text-slate-800 mb-4">Connect Online</h4>
+                <h4 className="text-lg font-semibold text-blue-900 mb-4">Connect Online</h4>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => {
                     const IconComponent = social.icon;
