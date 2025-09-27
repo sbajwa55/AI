@@ -120,18 +120,18 @@ const Projects = () => {
 
                     {/* Key Highlights */}
                     <div className="mb-6">
-                      <h4 className="text-sm font-semibold text-slate-800 mb-3 uppercase tracking-wide">
+                      <h4 className="text-sm font-semibold text-blue-900 mb-3 uppercase tracking-wide">
                         Key Results
                       </h4>
                       <div className="space-y-2">
                         {project.highlights.slice(0, 3).map((highlight, index) => (
                           <div 
                             key={index}
-                            className="flex items-start gap-3 text-slate-600"
+                            className="flex items-start gap-3 text-blue-700"
                           >
                             <ChevronRight 
                               size={14} 
-                              className="text-slate-400 mt-0.5 flex-shrink-0" 
+                              className="text-blue-500 mt-0.5 flex-shrink-0" 
                             />
                             <span className="text-sm leading-relaxed">{highlight}</span>
                           </div>
