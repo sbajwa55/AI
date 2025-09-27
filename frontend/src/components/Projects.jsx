@@ -57,8 +57,8 @@ const Projects = () => {
                   onClick={() => setSelectedCategory(category)}
                   className={`transition-all duration-200 ${
                     selectedCategory === category 
-                      ? 'bg-slate-800 hover:bg-slate-700 text-white' 
-                      : 'bg-white border-slate-300 text-slate-600 hover:bg-slate-100'
+                      ? 'bg-blue-800 hover:bg-blue-700 text-white' 
+                      : 'bg-white border-blue-300 text-blue-700 hover:bg-blue-100'
                   }`}
                 >
                   {category}
