@@ -250,115 +250,250 @@ export const questionBank = {
     }
   ],
   Medium: [
-    // Science & Math (Questions 1-5)
+    // Science & Math Questions (1-15)
     {
-      id: 1,
+      id: "m1",
       question: "What is the chemical symbol for carbon dioxide?",
       options: ["CO", "CO₂", "C₂O", "O₂C"],
       correctAnswer: 1,
+      category: "science",
       explanation: "CO₂ is the chemical symbol for carbon dioxide, consisting of one carbon atom and two oxygen atoms."
     },
     {
-      id: 2,
+      id: "m2",
       question: "What is the area of a circle with radius 5 cm? (Use π = 3.14)",
       options: ["78.5 cm²", "31.4 cm²", "15.7 cm²", "62.8 cm²"],
       correctAnswer: 0,
+      category: "math",
       explanation: "Area = π × r² = 3.14 × 5² = 3.14 × 25 = 78.5 cm²."
     },
     {
-      id: 3,
+      id: "m3",
       question: "Which system in the human body is responsible for fighting infections?",
       options: ["Nervous system", "Immune system", "Digestive system", "Circulatory system"],
       correctAnswer: 1,
+      category: "science",
       explanation: "The immune system protects the body against infections by identifying and destroying harmful pathogens."
     },
     {
-      id: 4,
+      id: "m4",
       question: "If a car travels 120 km in 2 hours, what is its average speed?",
       options: ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
       correctAnswer: 1,
+      category: "math",
       explanation: "Average speed = Distance ÷ Time = 120 km ÷ 2 hours = 60 km/h."
     },
     {
-      id: 5,
+      id: "m5",
       question: "What is the process by which plants make their own food?",
       options: ["Respiration", "Photosynthesis", "Digestion", "Circulation"],
       correctAnswer: 1,
+      category: "science",
       explanation: "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to make glucose and oxygen."
     },
-    
-    // History & Geography (Questions 6-10)
     {
-      id: 6,
+      id: "m6",
+      question: "What is the molecular formula for glucose?",
+      options: ["C₆H₁₂O₆", "C₆H₁₀O₅", "C₁₂H₂₂O₁₁", "C₅H₁₀O₅"],
+      correctAnswer: 0,
+      category: "science",
+      explanation: "The molecular formula of glucose is C₆H₁₂O₆, making it a hexose sugar."
+    },
+    {
+      id: "m7",
+      question: "Solve for x: 2x + 8 = 20",
+      options: ["4", "6", "8", "10"],
+      correctAnswer: 1,
+      category: "math",
+      explanation: "2x + 8 = 20, so 2x = 12, therefore x = 6."
+    },
+    {
+      id: "m8",
+      question: "What is the powerhouse of the cell?",
+      options: ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic reticulum"],
+      correctAnswer: 1,
+      category: "science",
+      explanation: "Mitochondria are called the 'powerhouse of the cell' because they produce ATP energy."
+    },
+    {
+      id: "m9",
+      question: "What is 20% of 150?",
+      options: ["25", "30", "35", "40"],
+      correctAnswer: 1,
+      category: "math",
+      explanation: "20% of 150 = (20/100) × 150 = 30."
+    },
+    {
+      id: "m10",
+      question: "Which blood type is the universal donor?",
+      options: ["A", "B", "AB", "O"],
+      correctAnswer: 3,
+      category: "science",
+      explanation: "Type O negative blood is the universal donor as it can be given to people with any blood type."
+    },
+    
+    // History & Geography Questions (11-25)
+    {
+      id: "m11",
       question: "Which ocean is the largest by area?",
       options: ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Pacific Ocean is the largest ocean, covering about one-third of Earth's surface."
     },
     {
-      id: 7,
+      id: "m12",
       question: "In which year did the Berlin Wall fall?",
       options: ["1987", "1989", "1991", "1993"],
       correctAnswer: 1,
+      category: "history",
       explanation: "The Berlin Wall fell on November 9, 1989, marking a significant step toward German reunification."
     },
     {
-      id: 8,
+      id: "m13",
       question: "Which country has the most time zones?",
       options: ["USA", "France", "Russia", "China"],
       correctAnswer: 2,
+      category: "geography",
       explanation: "Russia has 11 time zones, the most of any country in the world."
     },
     {
-      id: 9,
+      id: "m14",
       question: "Who was the leader of South Africa who fought against apartheid?",
       options: ["Desmond Tutu", "Nelson Mandela", "Steve Biko", "Oliver Tambo"],
       correctAnswer: 1,
+      category: "history",
       explanation: "Nelson Mandela was a key leader in the fight against apartheid and became South Africa's first Black president."
     },
     {
-      id: 10,
+      id: "m15",
       question: "Which mountain range separates Europe from Asia?",
       options: ["Alps", "Ural Mountains", "Caucasus Mountains", "Carpathians"],
       correctAnswer: 1,
+      category: "geography",
       explanation: "The Ural Mountains traditionally form the boundary between Europe and Asia."
     },
-    
-    // Current Events (Questions 11-15)
     {
-      id: 11,
+      id: "m16",
+      question: "What is the capital of Canada?",
+      options: ["Toronto", "Ottawa", "Montreal", "Vancouver"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "Ottawa is the capital city of Canada, located in the province of Ontario."
+    },
+    {
+      id: "m17",
+      question: "Which empire did Julius Caesar lead?",
+      options: ["Greek Empire", "Roman Empire", "Byzantine Empire", "Persian Empire"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "Julius Caesar was a leader of the Roman Empire and played a critical role in its expansion."
+    },
+    {
+      id: "m18",
+      question: "Which desert is the largest in the world?",
+      options: ["Sahara", "Antarctica", "Arabian", "Gobi"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "Antarctica is technically the largest desert (cold desert), while Sahara is the largest hot desert."
+    },
+    {
+      id: "m19",
+      question: "In which year did World War II begin?",
+      options: ["1938", "1939", "1940", "1941"],
+      correctAnswer: 1,
+      category: "history",
+      explanation: "World War II began on September 1, 1939, when Germany invaded Poland."
+    },
+    {
+      id: "m20",
+      question: "Which strait separates Europe from Africa?",
+      options: ["Bering Strait", "Strait of Gibraltar", "Strait of Hormuz", "Cook Strait"],
+      correctAnswer: 1,
+      category: "geography",
+      explanation: "The Strait of Gibraltar separates Europe (Spain) from Africa (Morocco)."
+    },
+    
+    // Current Events Questions (21-35)
+    {
+      id: "m21",
       question: "Which renewable energy source has grown fastest globally in recent years?",
       options: ["Wind power", "Solar power", "Hydroelectric", "Geothermal"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Solar power has experienced the fastest growth rate among renewable energy sources in recent years."
     },
     {
-      id: 12,
+      id: "m22",
       question: "Which space agency successfully landed the Perseverance rover on Mars in 2021?",
       options: ["ESA", "NASA", "SpaceX", "Roscosmos"],
       correctAnswer: 1,
+      category: "current",
       explanation: "NASA's Perseverance rover successfully landed on Mars in February 2021 to search for signs of ancient life."
     },
     {
-      id: 13,
+      id: "m23",
       question: "What does 'COP' stand for in climate conferences like COP28?",
       options: ["Climate Operations Protocol", "Conference of the Parties", "Carbon Output Program", "Climate Oversight Panel"],
       correctAnswer: 1,
+      category: "current",
       explanation: "COP stands for 'Conference of the Parties' to the UN Framework Convention on Climate Change."
     },
     {
-      id: 14,
+      id: "m24",
       question: "Which cryptocurrency is known as 'digital gold'?",
       options: ["Ethereum", "Bitcoin", "Litecoin", "Ripple"],
       correctAnswer: 1,
+      category: "current",
       explanation: "Bitcoin is often referred to as 'digital gold' due to its store of value properties and limited supply."
     },
     {
-      id: 15,
+      id: "m25",
       question: "Which global organization leads international efforts to combat climate change?",
       options: ["WHO", "UN", "NATO", "G7"],
       correctAnswer: 1,
+      category: "current",
       explanation: "The United Nations (UN) leads global climate change efforts through various programs and the Paris Agreement."
+    },
+    {
+      id: "m26",
+      question: "What does 'VR' stand for in technology?",
+      options: ["Video Reality", "Virtual Reality", "Visual Reality", "Verified Reality"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "VR stands for Virtual Reality, a technology that creates immersive simulated environments."
+    },
+    {
+      id: "m27",
+      question: "Which company is known for the iPhone?",
+      options: ["Samsung", "Apple", "Google", "Microsoft"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "Apple Inc. developed and manufactures the iPhone, first released in 2007."
+    },
+    {
+      id: "m28",
+      question: "What does 'IoT' stand for?",
+      options: ["Internet of Things", "Integration of Technology", "International Online Trade", "Innovative Online Tools"],
+      correctAnswer: 0,
+      category: "current",
+      explanation: "IoT stands for Internet of Things, referring to interconnected devices that can communicate over the internet."
+    },
+    {
+      id: "m29",
+      question: "Which platform is primarily used for professional networking?",
+      options: ["Instagram", "LinkedIn", "Snapchat", "TikTok"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "LinkedIn is the primary social media platform for professional networking and career development."
+    },
+    {
+      id: "m30",
+      question: "What does '5G' refer to in mobile technology?",
+      options: ["5 Gigabytes", "Fifth Generation", "5 Groups", "5 Graphics"],
+      correctAnswer: 1,
+      category: "current",
+      explanation: "5G refers to the fifth generation of mobile network technology, offering faster speeds and lower latency."
     }
   ],
   Advanced: [
