@@ -176,87 +176,87 @@ export const mockQuestions = {
   Advanced: [
     {
       id: 1,
-      question: "Which constitutional amendment is known as the 'Mini Constitution'?",
-      options: ["42nd Amendment", "44th Amendment", "73rd Amendment", "86th Amendment"],
+      question: "Which treaty ended World War I?",
+      options: ["Treaty of Versailles", "Treaty of Paris", "Treaty of Vienna", "Treaty of Westphalia"],
       correctAnswer: 0,
-      explanation: "The 42nd Constitutional Amendment (1976) is called the 'Mini Constitution' because it made extensive changes to the Constitution."
+      explanation: "The Treaty of Versailles (1919) officially ended World War I between Germany and the Allied Powers."
     },
     {
       id: 2,
-      question: "What is the derivative of x² with respect to x?",
-      options: ["x", "2x", "x²", "2x²"],
-      correctAnswer: 1,
-      explanation: "The derivative of x² with respect to x is 2x, using the power rule of differentiation."
+      question: "What is the derivative of sin(x) with respect to x?",
+      options: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+      correctAnswer: 0,
+      explanation: "The derivative of sin(x) with respect to x is cos(x), a fundamental rule in calculus."
     },
     {
       id: 3,
-      question: "Which Indus Valley Civilization site was discovered by Rakhal Das Banerjee?",
-      options: ["Harappa", "Mohenjo-daro", "Dholavira", "Kalibangan"],
+      question: "Which ancient wonder of the world was located in Alexandria, Egypt?",
+      options: ["Colossus of Rhodes", "Lighthouse of Alexandria", "Hanging Gardens", "Statue of Zeus"],
       correctAnswer: 1,
-      explanation: "Mohenjo-daro was discovered by Rakhal Das Banerjee in 1922, while Harappa was discovered by Daya Ram Sahni."
+      explanation: "The Lighthouse of Alexandria (Pharos) was one of the Seven Wonders of the Ancient World, built around 280 BC."
     },
     {
       id: 4,
-      question: "What is the pH of pure water at 25°C?",
-      options: ["6", "7", "8", "9"],
+      question: "What is Avogadro's number approximately?",
+      options: ["6.02 × 10²²", "6.02 × 10²³", "6.02 × 10²⁴", "6.02 × 10²¹"],
       correctAnswer: 1,
-      explanation: "Pure water has a pH of 7 at 25°C, which is considered neutral (neither acidic nor basic)."
+      explanation: "Avogadro's number is approximately 6.02 × 10²³, representing the number of particles in one mole of substance."
     },
     {
       id: 5,
-      question: "Which line of latitude passes through the center of India?",
-      options: ["Equator", "Tropic of Cancer", "Tropic of Capricorn", "Arctic Circle"],
+      question: "Which imaginary line divides the Earth into Northern and Southern hemispheres?",
+      options: ["Prime Meridian", "Equator", "Tropic of Cancer", "International Date Line"],
       correctAnswer: 1,
-      explanation: "The Tropic of Cancer (23.5°N) passes through the center of India, dividing it into almost two equal parts."
+      explanation: "The Equator (0° latitude) divides the Earth into Northern and Southern hemispheres."
     },
     {
       id: 6,
-      question: "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
-      options: ["Dr. Rajendra Prasad", "Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel"],
+      question: "Who developed the theory of relativity?",
+      options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Stephen Hawking"],
       correctAnswer: 1,
-      explanation: "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee and is known as the 'Architect of the Indian Constitution'."
+      explanation: "Albert Einstein developed both the special (1905) and general (1915) theories of relativity."
     },
     {
       id: 7,
-      question: "In which year was the BCCI (Board of Control for Cricket in India) formed?",
-      options: ["1925", "1928", "1930", "1932"],
+      question: "In which year was FIFA founded?",
+      options: ["1902", "1904", "1906", "1908"],
       correctAnswer: 1,
-      explanation: "The BCCI was formed in December 1928 and is the governing body for cricket in India."
+      explanation: "FIFA (Fédération Internationale de Football Association) was founded on May 21, 1904, in Paris."
     },
     {
       id: 8,
-      question: "What is the molecular formula of glucose?",
-      options: ["C₆H₁₂O₆", "C₆H₁₀O₅", "C₁₂H₂₂O₁₁", "C₅H₁₀O₅"],
-      correctAnswer: 0,
-      explanation: "The molecular formula of glucose is C₆H₁₂O₆, making it a hexose sugar."
+      question: "What is the most abundant gas in Earth's atmosphere?",
+      options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+      correctAnswer: 2,
+      explanation: "Nitrogen makes up about 78% of Earth's atmosphere, making it the most abundant gas."
     },
     {
       id: 9,
-      question: "Which Sangam literature work is considered the earliest Tamil grammar?",
-      options: ["Thirukkural", "Tolkappiyam", "Silappatikaram", "Manimekalai"],
+      question: "Which composer wrote 'The Four Seasons'?",
+      options: ["Mozart", "Vivaldi", "Beethoven", "Bach"],
       correctAnswer: 1,
-      explanation: "Tolkappiyam is the earliest Tamil grammar and one of the most ancient works in Tamil literature."
+      explanation: "Antonio Vivaldi composed 'The Four Seasons' (Le quattro stagioni) around 1720, a set of violin concertos."
     },
     {
       id: 10,
-      question: "What is the integral of 2x dx?",
-      options: ["x²", "x² + C", "2x²", "2x² + C"],
+      question: "What is the limit of (sin x)/x as x approaches 0?",
+      options: ["0", "1", "∞", "undefined"],
       correctAnswer: 1,
-      explanation: "The integral of 2x dx is x² + C, where C is the constant of integration."
+      explanation: "The limit of (sin x)/x as x approaches 0 is 1, a fundamental limit in calculus."
     },
     {
       id: 11,
-      question: "Which Indian classical music tradition uses 'Melakarta' ragas?",
-      options: ["Hindustani", "Carnatic", "Both", "Neither"],
+      question: "Which art movement is Pablo Picasso most associated with?",
+      options: ["Impressionism", "Cubism", "Surrealism", "Expressionism"],
       correctAnswer: 1,
-      explanation: "Melakarta ragas are fundamental to Carnatic music, the classical music tradition of South India."
+      explanation: "Pablo Picasso co-founded Cubism with Georges Braque, revolutionizing 20th-century art."
     },
     {
       id: 12,
-      question: "Who wrote the book 'The Discovery of India'?",
-      options: ["Mahatma Gandhi", "Jawaharlal Nehru", "Dr. A.P.J. Abdul Kalam", "Rabindranath Tagore"],
+      question: "Who wrote 'One Hundred Years of Solitude'?",
+      options: ["Jorge Luis Borges", "Gabriel García Márquez", "Mario Vargas Llosa", "Isabel Allende"],
       correctAnswer: 1,
-      explanation: "'The Discovery of India' was written by Jawaharlal Nehru in 1944 while he was imprisoned in Ahmednagar Fort."
+      explanation: "Gabriel García Márquez wrote 'One Hundred Years of Solitude' (1967), a masterpiece of magical realism."
     }
   ]
 };
