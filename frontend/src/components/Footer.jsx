@@ -50,14 +50,14 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <a 
                   href={`tel:${personalInfo.phone}`}
-                  className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors text-sm"
                 >
                   <Phone size={16} />
                   {personalInfo.phone}
                 </a>
                 <a 
                   href={`mailto:${personalInfo.email}`}
-                  className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors text-sm"
                 >
                   <Mail size={16} />
                   {personalInfo.email}
