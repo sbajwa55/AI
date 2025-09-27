@@ -4,87 +4,87 @@ export const mockQuestions = {
   Simple: [
     {
       id: 1,
-      question: "What is the capital of India?",
-      options: ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
-      correctAnswer: 0,
-      explanation: "New Delhi is the capital of India. Mumbai is the financial capital, Kolkata is the cultural capital of West Bengal, and Chennai is the capital of Tamil Nadu."
+      question: "What is the capital of France?",
+      options: ["London", "Paris", "Berlin", "Rome"],
+      correctAnswer: 1,
+      explanation: "Paris is the capital and largest city of France, known for landmarks like the Eiffel Tower and Louvre Museum."
     },
     {
       id: 2,
-      question: "Which river is known as the Ganges?",
-      options: ["Yamuna", "Ganga", "Brahmaputra", "Godavari"],
+      question: "Which is the longest river in the world?",
+      options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
       correctAnswer: 1,
-      explanation: "Ganga is known as the Ganges in English. It is one of the most sacred rivers in India."
+      explanation: "The Nile River is generally considered the longest river in the world at approximately 6,650 kilometers."
     },
     {
       id: 3,
-      question: "What is 5 + 3?",
-      options: ["6", "8", "7", "9"],
+      question: "What is 7 + 5?",
+      options: ["11", "12", "13", "14"],
       correctAnswer: 1,
-      explanation: "5 + 3 = 8. This is basic addition."
+      explanation: "7 + 5 = 12. This is basic addition."
     },
     {
       id: 4,
-      question: "Who is known as the Father of the Nation in India?",
-      options: ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Bhagat Singh"],
+      question: "Who painted the Mona Lisa?",
+      options: ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
       correctAnswer: 1,
-      explanation: "Mahatma Gandhi is known as the Father of the Nation in India for his role in India's independence movement."
+      explanation: "Leonardo da Vinci painted the Mona Lisa between 1503-1519. It's housed in the Louvre Museum in Paris."
     },
     {
       id: 5,
-      question: "Which is the largest state in India by area?",
-      options: ["Maharashtra", "Uttar Pradesh", "Rajasthan", "Madhya Pradesh"],
+      question: "Which is the largest country in the world by area?",
+      options: ["China", "Canada", "Russia", "United States"],
       correctAnswer: 2,
-      explanation: "Rajasthan is the largest state in India by area, covering about 342,239 square kilometers."
+      explanation: "Russia is the largest country in the world by land area, covering about 17.1 million square kilometers."
     },
     {
       id: 6,
-      question: "What is the national bird of India?",
-      options: ["Eagle", "Peacock", "Parrot", "Sparrow"],
+      question: "What is the fastest land animal?",
+      options: ["Lion", "Cheetah", "Horse", "Leopard"],
       correctAnswer: 1,
-      explanation: "Peacock (Pavo cristatus) is the national bird of India, known for its beautiful plumage."
+      explanation: "The cheetah is the fastest land animal, capable of reaching speeds up to 70 mph (112 km/h)."
     },
     {
       id: 7,
-      question: "Which planet is closest to the Sun?",
-      options: ["Venus", "Mercury", "Earth", "Mars"],
-      correctAnswer: 1,
-      explanation: "Mercury is the closest planet to the Sun in our solar system."
+      question: "How many continents are there?",
+      options: ["5", "6", "7", "8"],
+      correctAnswer: 2,
+      explanation: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
     },
     {
       id: 8,
-      question: "What is the currency of India?",
-      options: ["Dollar", "Rupee", "Pound", "Euro"],
-      correctAnswer: 1,
-      explanation: "The Indian Rupee (INR) is the official currency of India."
+      question: "What is the currency of the United States?",
+      options: ["Pound", "Euro", "Dollar", "Yen"],
+      correctAnswer: 2,
+      explanation: "The US Dollar (USD) is the official currency of the United States."
     },
     {
       id: 9,
-      question: "Which sport is most popular in India?",
-      options: ["Football", "Cricket", "Hockey", "Badminton"],
+      question: "Which sport is played at Wimbledon?",
+      options: ["Football", "Tennis", "Cricket", "Golf"],
       correctAnswer: 1,
-      explanation: "Cricket is the most popular sport in India, often called a religion in the country."
+      explanation: "Tennis is played at Wimbledon, which is one of the four Grand Slam tennis tournaments."
     },
     {
       id: 10,
-      question: "What is 10 × 2?",
-      options: ["15", "20", "25", "12"],
+      question: "What is 6 × 4?",
+      options: ["20", "24", "28", "22"],
       correctAnswer: 1,
-      explanation: "10 × 2 = 20. This is basic multiplication."
+      explanation: "6 × 4 = 24. This is basic multiplication."
     },
     {
       id: 11,
-      question: "Which festival is known as the Festival of Lights?",
-      options: ["Holi", "Diwali", "Eid", "Christmas"],
+      question: "Which holiday celebrates the birth of Jesus Christ?",
+      options: ["Easter", "Christmas", "Halloween", "New Year"],
       correctAnswer: 1,
-      explanation: "Diwali is known as the Festival of Lights, celebrated by lighting diyas and candles."
+      explanation: "Christmas celebrates the birth of Jesus Christ and is observed on December 25th by Christians worldwide."
     },
     {
       id: 12,
-      question: "What is the national flower of India?",
-      options: ["Rose", "Lotus", "Marigold", "Jasmine"],
+      question: "What do bees make?",
+      options: ["Milk", "Honey", "Butter", "Cheese"],
       correctAnswer: 1,
-      explanation: "Lotus (Nelumbo nucifera) is the national flower of India, symbolizing purity and beauty."
+      explanation: "Bees make honey from nectar collected from flowers, which they store in their hives."
     }
   ],
   Medium: [
