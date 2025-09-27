@@ -26,9 +26,14 @@ const ResultsScreen = ({ quizState, setQuizState }) => {
     
     questions.forEach((question, index) => {
       const userAnswer = quizState.answers[index];
+      console.log(`Question ${index + 1}: User answered ${userAnswer}, Correct answer ${question.correctAnswer}`);
+      console.log(`User selected: "${question.options[userAnswer]}", Correct: "${question.options[question.correctAnswer]}"`);
+      
       if (userAnswer === question.correctAnswer) {
         correctCount++;
+        console.log(`✅ Question ${index + 1} CORRECT`);
       } else {
+        console.log(`❌ Question ${index + 1} INCORRECT`);
         incorrectAnswers.push({
           questionIndex: index,
           question: question.question,
