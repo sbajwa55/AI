@@ -58,12 +58,6 @@ const Contact = () => {
       label: 'LinkedIn',
       href: personalInfo.linkedIn,
       description: 'Connect professionally'
-    },
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: personalInfo.github,
-      description: 'View my code'
     }
   ];
 
