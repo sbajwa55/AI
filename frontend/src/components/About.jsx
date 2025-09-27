@@ -46,19 +46,19 @@ const About = () => {
             {/* Stats and Highlights */}
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                <Card className="bg-slate-50 border-slate-200 hover:shadow-md transition-shadow duration-300">
+                <Card className="bg-blue-50 border-blue-200 hover:shadow-md transition-shadow duration-300">
                   <CardContent className="p-6 text-center">
-                    <Users className="mx-auto mb-3 text-slate-600" size={32} />
-                    <div className="text-2xl font-bold text-slate-800 mb-1">25+</div>
-                    <div className="text-sm text-slate-600">Years Experience</div>
+                    <Users className="mx-auto mb-3 text-blue-600" size={32} />
+                    <div className="text-2xl font-bold text-blue-900 mb-1">25+</div>
+                    <div className="text-sm text-blue-700">Years Experience</div>
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-slate-50 border-slate-200 hover:shadow-md transition-shadow duration-300">
+                <Card className="bg-blue-50 border-blue-200 hover:shadow-md transition-shadow duration-300">
                   <CardContent className="p-6 text-center">
-                    <Building className="mx-auto mb-3 text-slate-600" size={32} />
-                    <div className="text-2xl font-bold text-slate-800 mb-1">500+</div>
-                    <div className="text-sm text-slate-600">Databases Managed</div>
+                    <Building className="mx-auto mb-3 text-blue-600" size={32} />
+                    <div className="text-2xl font-bold text-blue-900 mb-1">500+</div>
+                    <div className="text-sm text-blue-700">Databases Managed</div>
                   </CardContent>
                 </Card>
               </div>
