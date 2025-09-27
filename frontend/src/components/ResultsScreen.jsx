@@ -58,7 +58,8 @@ const ResultsScreen = ({ quizState, setQuizState }) => {
       startTime: null,
       endTime: null,
       isQuizStarted: false,
-      isQuizCompleted: false
+      isQuizCompleted: false,
+      generatedQuestions: null // Reset generated questions
     });
     navigate("/");
   };
