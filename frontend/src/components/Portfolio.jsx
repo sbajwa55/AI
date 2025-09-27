@@ -6,6 +6,7 @@ import Skills from './Skills';
 import CareerTimeline from './CareerTimeline';
 import Experience from './Experience';
 import Projects from './Projects';
+import Blog from './Blog';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -21,6 +22,7 @@ const Portfolio = () => {
         <CareerTimeline />
         <Experience />
         <Projects />
+        <Blog />
         <Testimonials />
         <Contact />
       </main>
