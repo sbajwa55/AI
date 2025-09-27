@@ -84,8 +84,8 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-800 mb-6">Get In Touch</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-6">Get In Touch</h3>
+              <p className="text-blue-700 mb-8 leading-relaxed">
                 With over 25 years of experience in enterprise database solutions, I'm always excited to take on new challenges and collaborate on innovative projects. Whether you need database architecture guidance, cloud migration expertise, or data engineering solutions, let's discuss how I can help.
               </p>
 
