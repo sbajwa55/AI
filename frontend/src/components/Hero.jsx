@@ -76,6 +76,21 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              asChild
+              className="border-2 border-blue-600 text-blue-700 hover:bg-blue-50 px-10 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <a 
+                href="https://customer-assets.emergentagent.com/job_dbexpert/artifacts/3eq35lp2_sbajwa_resume_Sep_2025_pdf.pdf"
+                download="Sandeep_Bajwa_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Resume
+              </a>
+            </Button>
           </div>
         </div>
 
