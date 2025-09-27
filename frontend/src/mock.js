@@ -115,89 +115,115 @@ export const mockQuestions = {
     }
   ],
   Medium: [
+    // Science & Math (Questions 1-5)
     {
       id: 1,
-      question: "What is the molecular geometry of methane (CH₄)?",
-      options: ["Linear", "Tetrahedral", "Trigonal planar", "Bent"],
+      question: "What is the chemical symbol for carbon dioxide?",
+      options: ["CO", "CO₂", "C₂O", "O₂C"],
       correctAnswer: 1,
-      explanation: "Methane has a tetrahedral molecular geometry with bond angles of 109.5° due to sp³ hybridization of carbon."
+      explanation: "CO₂ is the chemical symbol for carbon dioxide, consisting of one carbon atom and two oxygen atoms."
     },
     {
       id: 2,
-      question: "What is the derivative of x³ with respect to x?",
-      options: ["3x²", "x²", "3x³", "3x"],
+      question: "What is the area of a circle with radius 5 cm? (Use π = 3.14)",
+      options: ["78.5 cm²", "31.4 cm²", "15.7 cm²", "62.8 cm²"],
       correctAnswer: 0,
-      explanation: "Using the power rule, d/dx(x³) = 3x². The exponent becomes the coefficient and the new exponent is reduced by 1."
+      explanation: "Area = π × r² = 3.14 × 5² = 3.14 × 25 = 78.5 cm²."
     },
     {
       id: 3,
-      question: "Which organelle contains the cell's genetic material?",
-      options: ["Mitochondria", "Nucleus", "Ribosome", "Endoplasmic reticulum"],
+      question: "Which system in the human body is responsible for fighting infections?",
+      options: ["Nervous system", "Immune system", "Digestive system", "Circulatory system"],
       correctAnswer: 1,
-      explanation: "The nucleus contains the cell's DNA (genetic material) and controls cellular activities."
+      explanation: "The immune system protects the body against infections by identifying and destroying harmful pathogens."
     },
     {
       id: 4,
-      question: "What is the pH of a solution with [H⁺] = 1 × 10⁻⁵ M?",
-      options: ["5", "9", "-5", "10"],
-      correctAnswer: 0,
-      explanation: "pH = -log[H⁺] = -log(1 × 10⁻⁵) = -(-5) = 5. This is an acidic solution."
+      question: "If a car travels 120 km in 2 hours, what is its average speed?",
+      options: ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+      correctAnswer: 1,
+      explanation: "Average speed = Distance ÷ Time = 120 km ÷ 2 hours = 60 km/h."
     },
     {
       id: 5,
-      question: "According to Newton's second law, F = ma. If mass doubles and acceleration halves, force:",
-      options: ["Doubles", "Remains the same", "Halves", "Quadruples"],
+      question: "What is the process by which plants make their own food?",
+      options: ["Respiration", "Photosynthesis", "Digestion", "Circulation"],
       correctAnswer: 1,
-      explanation: "F = ma. If m becomes 2m and a becomes a/2, then F = (2m)(a/2) = ma, so force remains the same."
+      explanation: "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to make glucose and oxygen."
     },
+    
+    // History & Geography (Questions 6-10)
     {
       id: 6,
-      question: "In the electromagnetic spectrum, which has the longest wavelength?",
-      options: ["X-rays", "Visible light", "Radio waves", "Gamma rays"],
-      correctAnswer: 2,
-      explanation: "Radio waves have the longest wavelength in the electromagnetic spectrum, ranging from millimeters to kilometers."
+      question: "Which ocean is the largest by area?",
+      options: ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+      correctAnswer: 1,
+      explanation: "The Pacific Ocean is the largest ocean, covering about one-third of Earth's surface."
     },
     {
       id: 7,
-      question: "What is the process by which DNA makes an identical copy of itself?",
-      options: ["Transcription", "Replication", "Translation", "Mutation"],
+      question: "In which year did the Berlin Wall fall?",
+      options: ["1987", "1989", "1991", "1993"],
       correctAnswer: 1,
-      explanation: "DNA replication is the process where DNA makes an identical copy of itself during cell division."
+      explanation: "The Berlin Wall fell on November 9, 1989, marking a significant step toward German reunification."
     },
     {
       id: 8,
-      question: "What is the molar mass of CO₂ (Carbon = 12 g/mol, Oxygen = 16 g/mol)?",
-      options: ["28 g/mol", "32 g/mol", "44 g/mol", "48 g/mol"],
+      question: "Which country has the most time zones?",
+      options: ["USA", "France", "Russia", "China"],
       correctAnswer: 2,
-      explanation: "CO₂ molar mass = 12 + (2 × 16) = 12 + 32 = 44 g/mol."
+      explanation: "Russia has 11 time zones, the most of any country in the world."
     },
     {
       id: 9,
-      question: "Which French revolution began in 1789?",
-      options: ["Industrial Revolution", "French Revolution", "Scientific Revolution", "Agricultural Revolution"],
+      question: "Who was the leader of South Africa who fought against apartheid?",
+      options: ["Desmond Tutu", "Nelson Mandela", "Steve Biko", "Oliver Tambo"],
       correctAnswer: 1,
-      explanation: "The French Revolution began in 1789, leading to major political and social changes in France and Europe."
+      explanation: "Nelson Mandela was a key leader in the fight against apartheid and became South Africa's first Black president."
     },
     {
       id: 10,
-      question: "What is the quadratic formula for ax² + bx + c = 0?",
-      options: ["x = -b ± √(b² - 4ac) / 2a", "x = b ± √(b² + 4ac) / 2a", "x = -b ± √(b² + 4ac) / 2a", "x = b ± √(b² - 4ac) / 2a"],
-      correctAnswer: 0,
-      explanation: "The quadratic formula is x = (-b ± √(b² - 4ac)) / 2a, used to solve quadratic equations."
+      question: "Which mountain range separates Europe from Asia?",
+      options: ["Alps", "Ural Mountains", "Caucasus Mountains", "Carpathians"],
+      correctAnswer: 1,
+      explanation: "The Ural Mountains traditionally form the boundary between Europe and Asia."
     },
+    
+    // Current Events (Questions 11-15)
     {
       id: 11,
-      question: "What type of reaction is photosynthesis?",
-      options: ["Catabolic", "Anabolic", "Exothermic", "Spontaneous"],
+      question: "Which renewable energy source has grown fastest globally in recent years?",
+      options: ["Wind power", "Solar power", "Hydroelectric", "Geothermal"],
       correctAnswer: 1,
-      explanation: "Photosynthesis is an anabolic reaction because it builds complex molecules (glucose) from simpler ones (CO₂ and H₂O)."
+      explanation: "Solar power has experienced the fastest growth rate among renewable energy sources in recent years."
     },
     {
       id: 12,
-      question: "What is the speed of light in vacuum?",
-      options: ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10⁹ m/s", "3 × 10⁷ m/s"],
-      correctAnswer: 0,
-      explanation: "The speed of light in vacuum is approximately 3 × 10⁸ m/s or 299,792,458 m/s exactly."
+      question: "Which space agency successfully landed the Perseverance rover on Mars in 2021?",
+      options: ["ESA", "NASA", "SpaceX", "Roscosmos"],
+      correctAnswer: 1,
+      explanation: "NASA's Perseverance rover successfully landed on Mars in February 2021 to search for signs of ancient life."
+    },
+    {
+      id: 13,
+      question: "What does 'COP' stand for in climate conferences like COP28?",
+      options: ["Climate Operations Protocol", "Conference of the Parties", "Carbon Output Program", "Climate Oversight Panel"],
+      correctAnswer: 1,
+      explanation: "COP stands for 'Conference of the Parties' to the UN Framework Convention on Climate Change."
+    },
+    {
+      id: 14,
+      question: "Which cryptocurrency is known as 'digital gold'?",
+      options: ["Ethereum", "Bitcoin", "Litecoin", "Ripple"],
+      correctAnswer: 1,
+      explanation: "Bitcoin is often referred to as 'digital gold' due to its store of value properties and limited supply."
+    },
+    {
+      id: 15,
+      question: "Which global organization leads international efforts to combat climate change?",
+      options: ["WHO", "UN", "NATO", "G7"],
+      correctAnswer: 1,
+      explanation: "The United Nations (UN) leads global climate change efforts through various programs and the Paris Agreement."
     }
   ],
   Advanced: [
