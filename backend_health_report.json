@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-09-28T00:48:43.149838",
+  "backend_url": "https://dbexpert.preview.emergentagent.com/api",
+  "summary": {
+    "total": 13,
+    "passed": 13,
+    "warnings": 0,
+    "failed": 0,
+    "healthy": true
+  },
+  "detailed_results": {
+    "api_endpoints": {
+      "hello_world": {
+        "status": "pass",
+        "response": {
+          "message": "Hello World"
+        }
+      },
+      "contact_post": {
+        "status": "pass",
+        "response": {
+          "id": "459d84d6-664a-47a5-b958-323f1911034a",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "subject": "Test Contact Form",
+          "message": "This is a test message from the backend health check.",
+          "timestamp": "2025-09-28T00:48:33.779638"
+        }
+      },
+      "contact_get": {
+        "status": "pass",
+        "message_count": 1
+      },
+      "cors": {
+        "status": "pass",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "*",
+          "allow": "GET",
+          "Content-Length": "31",
+          "content-type": "application/json",
+          "date": "Sun, 28 Sep 2025 00:48:37 GMT",
+          "server": "uvicorn",
+          "via": "1.1 google",
+          "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+        }
+      }
+    },
+    "database_connectivity": {
+      "insert": {
+        "status": "pass"
+      },
+      "read": {
+        "status": "pass",
+        "count": 2
+      },
+      "status_insert": {
+        "status": "pass"
+      }
+    },
+    "email_integration": {
+      "smtp_test": {
+        "status": "pass",
+        "note": "Email attempted via contact form"
+      },
+      "config": {
+        "status": "pass",
+        "variables": [
+          "EMAIL_FROM",
+          "EMAIL_PASSWORD"
+        ]
+      }
+    },
+    "service_health": {
+      "performance": {
+        "status": "pass",
+        "response_time_ms": 9.84501838684082
+      },
+      "stability": {
+        "status": "pass",
+        "stable_endpoints": 3
+      }
+    },
+    "security_config": {
+      "validation": {
+        "status": "pass"
+      },
+      "env_config": {
+        "status": "pass",
+        "variables": [
+          "MONGO_URL",
+          "DB_NAME",
+          "CORS_ORIGINS",
+          "EMAIL_FROM",
+          "EMAIL_PASSWORD"
+        ]
+      }
+    }
+  }
+}
