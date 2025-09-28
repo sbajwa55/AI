@@ -237,6 +237,56 @@ export const blogPosts = [
     topics: ["Data Guard", "High Availability", "Disaster Recovery"],
     publishedDate: "2025",
     type: "Implementation Guide"
+  },
+  {
+    id: 6,
+    title: "Basics of Oracle Physical Backups in an Exadata Environment Using ZDLRA",
+    summary: "This document explains how to perform effective physical backups for Oracle Databases running on Exadata using the Oracle Zero Data Loss Recovery Appliance (ZDLRA). It details ZDLRA's capabilities like continuous protection, scalability, and RMAN integration.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/g65lofm3_Oracle%20Exadata%20Zdlra%20Backups.docx",
+    topics: ["Exadata", "ZDLRA", "RMAN", "Backup Strategy"],
+    publishedDate: "2025",
+    type: "Technical Guide"
+  },
+  {
+    id: 7,
+    title: "Oracle Data Pump (expdp/impdp) Logical Backups: Use Cases, Examples, and 23ai New Features",
+    summary: "The document introduces Oracle Data Pump (expdp/impdp) as a powerful utility for logical backups and data movement. It highlights common use cases, provides practical command examples, and focuses on significant new features in Oracle 23ai.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/fxcmkqcg_Oracle%20Expdp%20Impdp%2023ai.docx",
+    topics: ["Data Pump", "Oracle 23ai", "Logical Backup", "Migration"],
+    publishedDate: "2025",
+    type: "User Guide"
+  },
+  {
+    id: 8,
+    title: "Oracle GoldenGate Replication Setup: One-Way and Multi-Master with Examples",
+    summary: "This document provides a comprehensive guide to setting up Oracle GoldenGate for both one-way and multi-master (bi-directional) replication. It offers detailed, step-by-step instructions and covers testing, validation, and troubleshooting.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/9saeytlo_Oracle%20Goldengate%20Replication.docx",
+    topics: ["GoldenGate", "Replication", "Multi-Master", "Real-time"],
+    publishedDate: "2025",
+    type: "Setup Guide"
+  },
+  {
+    id: 9,
+    title: "Steps to Tune an Oracle Database Instance",
+    summary: "This document provides a structured approach to tuning an Oracle database instance for optimal performance and resource utilization. It emphasizes establishing performance baselines and systematically addressing key tuning areas.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/z78l391b_Oracle%20Instance%20Tuning.docx",
+    topics: ["Performance Tuning", "SGA/PGA", "AWR", "ADDM"],
+    publishedDate: "2025",
+    type: "Tuning Guide"
+  },
+  {
+    id: 10,
+    title: "Oracle Multitenant Architecture: Setup, Examples, and Converting a Non-CDB to PDB",
+    summary: "This document provides a comprehensive guide to Oracle's Multitenant Architecture, explaining Container Databases (CDBs) and Pluggable Databases (PDBs). It includes a detailed step-by-step process for converting legacy Non-Container Databases into PDBs.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/iufs18vs_Oracle%20Multitenant%20Architecture%20%26%20Non-cdb%20%E2%86%92%20Pdb%20Conversion.docx",
+    topics: ["Multitenant", "CDB", "PDB", "Migration"],
+    publishedDate: "2025",
+    type: "Architecture Guide"
   }
 ];
 
