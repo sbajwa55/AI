@@ -1,9 +1,19 @@
-import React from 'react';
-import { Card, CardContent } from './ui/card';
+import React, { useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { FileText, Calendar, ArrowRight } from 'lucide-react';
+import { Badge } from './ui/badge';
+import { blogPosts } from '../data/mock';
+import { FileText, Download, ArrowRight, Filter } from 'lucide-react';
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  
+  const categories = ['All', ...new Set(blogPosts.map(post => post.category))];
+  
+  const filteredPosts = selectedCategory === 'All' 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === selectedCategory);
+
   return (
     <section id="blog" className="py-20 bg-blue-50">
       <div className="container mx-auto px-6">
@@ -14,52 +24,118 @@ const Blog = () => {
               Blog & Insights
             </h2>
             <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-              Sharing thoughts on database engineering, cloud migrations, and the evolving landscape of enterprise data solutions.
+              Technical documents, scripts, and insights from 25+ years of database engineering and enterprise data solutions experience.
             </p>
           </div>
 
-          {/* Empty State */}
-          <div className="text-center py-16">
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {categories.map(category => (
+              <Button
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedCategory(category)}
+                className={`transition-all duration-200 ${
+                  selectedCategory === category 
+                    ? 'bg-blue-800 hover:bg-blue-700 text-white' 
+                    : 'bg-white border-blue-300 text-blue-700 hover:bg-blue-100'
+                }`}
+              >
+                <Filter size={14} className="mr-1" />
+                {category}
+              </Button>
+            ))}
+          </div>
+
+          {/* Blog Posts Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {filteredPosts.map(post => (
+              <Card 
+                key={post.id}
+                className="bg-white border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-start justify-between gap-2 mb-3">
+                    <Badge 
+                      variant="outline" 
+                      className="bg-blue-100 text-blue-800 border-blue-300 text-xs px-2 py-1"
+                    >
+                      {post.type}
+                    </Badge>
+                    <div className="text-blue-500 text-xs">{post.publishedDate}</div>
+                  </div>
+                  
+                  <CardTitle className="text-lg text-blue-900 leading-tight group-hover:text-blue-700 transition-colors">
+                    {post.title}
+                  </CardTitle>
+                </CardHeader>
+
+                <CardContent className="pt-0">
+                  <p className="text-blue-700 text-sm mb-4 leading-relaxed line-clamp-3">
+                    {post.summary}
+                  </p>
+
+                  {/* Topics Tags */}
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {post.topics.slice(0, 3).map((topic, index) => (
+                      <Badge
+                        key={index}
+                        variant="secondary"
+                        className="bg-blue-50 text-blue-700 text-xs px-2 py-1 font-normal"
+                      >
+                        {topic}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  {/* Download Button */}
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    asChild
+                    className="w-full border-blue-300 text-blue-700 hover:bg-blue-100 group-hover:border-blue-600 transition-all duration-300"
+                  >
+                    <a
+                      href={post.downloadUrl}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <Download size={14} />
+                      <span>Download Document</span>
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Additional Resources */}
+          <div className="text-center">
             <Card className="bg-white/80 backdrop-blur-sm border-blue-200 max-w-2xl mx-auto">
-              <CardContent className="p-12">
-                <div className="flex justify-center mb-6">
-                  <div className="p-4 bg-blue-100 rounded-full">
-                    <FileText size={48} className="text-blue-600" />
+              <CardContent className="p-8">
+                <div className="flex justify-center mb-4">
+                  <div className="p-3 bg-blue-100 rounded-full">
+                    <FileText size={32} className="text-blue-600" />
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                  Coming Soon
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">
+                  More Resources Coming Soon
                 </h3>
                 
                 <p className="text-blue-700 mb-6 leading-relaxed">
-                  I'm preparing to share insights from my 25+ years of experience in database engineering, 
-                  cloud migrations, and enterprise data solutions. Stay tuned for articles on Oracle optimization, 
-                  Snowflake migrations, and modern data architectures.
+                  Stay tuned for more technical guides, cloud migration strategies, and implementation lessons.
                 </p>
-
-                <div className="space-y-3 text-blue-600 mb-8">
-                  <div className="flex items-center justify-center gap-2">
-                    <Calendar size={16} />
-                    <span className="text-sm">Oracle Documents, Scripts and Tips</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-2">
-                    <Calendar size={16} />
-                    <span className="text-sm">Cloud Migration Strategies</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-2">
-                    <Calendar size={16} />
-                    <span className="text-sm">Big Data Implementation Lessons</span>
-                  </div>
-                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     variant="outline"
                     className="border-blue-600 text-blue-700 hover:bg-blue-50"
                     onClick={() => {
-                      // Placeholder for future functionality
-                      alert("Blog articles coming soon! Connect with me on LinkedIn for updates.");
+                      alert("More resources coming soon! Connect with me on LinkedIn for updates.");
                     }}
                   >
                     <span className="mr-2">Get Notified</span>
@@ -83,14 +159,6 @@ const Blog = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-          {/* Future Blog Grid Placeholder */}
-          <div className="hidden">
-            {/* This section will be used when blogs are added */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Blog cards will go here */}
-            </div>
           </div>
         </div>
       </div>
