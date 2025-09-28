@@ -187,6 +187,59 @@ export const education = {
   focus: "Data Structures and Networks"
 };
 
+export const blogPosts = [
+  {
+    id: 1,
+    title: "Benefits of Using Common Table Expressions (CTEs) in SQL Queries",
+    summary: "This document highlights the significant advantages of using Common Table Expressions (CTEs) in SQL. CTEs, which define temporary named result sets, are presented as a powerful tool to make complex SQL queries more understandable, manageable, and efficient.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/unyxk3ci_CTE_Benefits.docx",
+    topics: ["SQL Optimization", "Query Design", "Best Practices"],
+    publishedDate: "2025",
+    type: "Technical Guide"
+  },
+  {
+    id: 2,
+    title: "Oracle Database Locks and Deadlocks (with Scripts)",
+    summary: "This document serves as a practical guide for Oracle Database Administrators (DBAs) to troubleshoot and manage lock contention and deadlocks. It offers a series of SQL queries that leverage Oracle's dynamic performance views to provide insights into the current state of locks within the database.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/6zwloh50_Database_locks_and_deadlocks_with_scripts.docx",
+    topics: ["Database Administration", "Performance Tuning", "Troubleshooting"],
+    publishedDate: "2025",
+    type: "Diagnostic Scripts"
+  },
+  {
+    id: 3,
+    title: "Hadoop Big Data Lake Architecture with Real-Time Streaming",
+    summary: "This document explores how to build a robust and scalable Hadoop Big Data Lake Architecture that incorporates real-time streaming capabilities. It explains that data lakes, built on Hadoop's distributed storage and processing, can store diverse data types without predefined schemas.",
+    category: "Big Data Architecture",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/9r82qqj7_Hadoop%20Big%20Data%20Lake%20Architecture.docx",
+    topics: ["Big Data", "Hadoop", "Streaming", "Architecture"],
+    publishedDate: "2025",
+    type: "Architecture Guide"
+  },
+  {
+    id: 4,
+    title: "Top 20 New Features in Oracle Database 23ai",
+    summary: "Oracle Database 23ai introduces significant advancements centered around AI, automation, developer ease-of-use, and enhanced security. Key innovations include native AI Vector Search for semantic capabilities, in-database machine learning enhancements, and SQL Firewall for threat protection.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/4kdrw8sr_Oracle%2023ai%20Top%2020%20Features.docx",
+    topics: ["Oracle 23ai", "AI Features", "Database Innovation"],
+    publishedDate: "2025",
+    type: "Feature Overview"
+  },
+  {
+    id: 5,
+    title: "Oracle Data Guard: Modes, Setup, Lag Checks & Troubleshooting",
+    summary: "This document serves as a comprehensive guide to Oracle Data Guard, focusing on ensuring high availability and disaster recovery. It covers protection modes, setup procedures, monitoring scripts, and troubleshooting common issues.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/n2tt71k5_Oracle%20Data%20Guard_%20Modes%2C%20Setup%2C%20Lag%20Checks%20%26%20Troubleshooting.docx",
+    topics: ["Data Guard", "High Availability", "Disaster Recovery"],
+    publishedDate: "2025",
+    type: "Implementation Guide"
+  }
+];
+
 export const careerHighlights = [
   {
     year: "2025",
