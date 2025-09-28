@@ -287,6 +287,36 @@ export const blogPosts = [
     topics: ["Multitenant", "CDB", "PDB", "Migration"],
     publishedDate: "2025",
     type: "Architecture Guide"
+  },
+  {
+    id: 11,
+    title: "Oracle RMAN Backups: Use Cases, Examples, and New Features in 23ai",
+    summary: "This document provides a comprehensive overview of Oracle's Recovery Manager (RMAN), the standard tool for physical database backups and recovery. It highlights significant new features introduced in Oracle 23ai, including automatic Level-1 merge, parallelized restores, and RMAN REST API support.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/nezwhbiv_Oracle%20Rman%20Backups%2023ai.docx",
+    topics: ["RMAN", "Oracle 23ai", "Backup", "Recovery"],
+    publishedDate: "2025",
+    type: "Technical Guide"
+  },
+  {
+    id: 12,
+    title: "Splunk Log Mining: A Practical Guide",
+    summary: "This document serves as a practical guide to log mining using Splunk. It covers data ingestion, Search Processing Language (SPL), log mining techniques, visualization, and real-time monitoring with detailed examples for business analysis and system troubleshooting.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/v1sjbhqw_Splunk%20Log%20Mining_basics_with_examples.docx",
+    topics: ["Splunk", "Log Mining", "SPL", "Analytics"],
+    publishedDate: "2025",
+    type: "User Guide"
+  },
+  {
+    id: 13,
+    title: "Steps to Tune a Query in Oracle Database",
+    summary: "This document outlines a structured, 14-step methodology for systematically tuning poorly performing SQL queries in Oracle Database. It emphasizes analyzing execution plans, optimizing SQL predicates, improving indexing strategies, and using Oracle's diagnostic tools.",
+    category: "Oracle Documents, Scripts and Tips",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/l16tpzpj_Steps_to_tune_a_SQL.docx",
+    topics: ["SQL Tuning", "Execution Plans", "Performance", "Optimization"],
+    publishedDate: "2025",
+    type: "Tuning Guide"
   }
 ];
 
