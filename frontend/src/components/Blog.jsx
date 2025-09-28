@@ -41,7 +41,7 @@ const Blog = () => {
                 <div className="space-y-3 text-blue-600 mb-8">
                   <div className="flex items-center justify-center gap-2">
                     <Calendar size={16} />
-                    <span className="text-sm">Oracle Database Best Practices</span>
+                    <span className="text-sm">Oracle Documents, Scripts and Tips</span>
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Calendar size={16} />
