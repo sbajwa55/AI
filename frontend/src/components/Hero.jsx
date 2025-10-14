@@ -83,8 +83,8 @@ const Hero = () => {
               className="border-2 border-blue-600 text-blue-700 hover:bg-blue-50 px-10 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <a 
-                href="https://customer-assets.emergentagent.com/job_dbexpert/artifacts/3eq35lp2_sbajwa_resume_Sep_2025_pdf.pdf"
-                download="Sandeep_Bajwa_Resume.pdf"
+                href="https://customer-assets.emergentagent.com/job_dbexpert/artifacts/cvu8o2fw_sbajwa_resume_Oct_13_2025.pdf"
+                download="Sandeep_Bajwa_Resume_Oct_2025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
