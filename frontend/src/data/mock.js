@@ -177,6 +177,11 @@ export const certifications = [
     name: "Python PCEP – Certified Entry-Level Python Programmer", 
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
     shortName: "PCEP"
+  },
+  {
+    name: "1Z0-1122-25 - Oracle Cloud Infrastructure 2025 AI Foundations Associate",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/md703z4e_Oracle_university.png",
+    shortName: "OCI AI Foundations"
   }
 ];
 
