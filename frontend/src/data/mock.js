@@ -179,6 +179,11 @@ export const certifications = [
     shortName: "PCEP"
   },
   {
+    name: "1Z0-1127-25 - Oracle Cloud Infrastructure 2025 Generative AI Professional",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/kvzvj2h5_Oracle_university.png",
+    shortName: "OCI AI Generative AI Professional"
+  },
+  {
     name: "1Z0-1122-25 - Oracle Cloud Infrastructure 2025 AI Foundations Associate",
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/md703z4e_Oracle_university.png",
     shortName: "OCI AI Foundations"
