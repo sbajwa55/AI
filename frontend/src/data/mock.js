@@ -174,11 +174,6 @@ export const certifications = [
     shortName: "OCP DBA"
   },
   {
-    name: "Python PCEP – Certified Entry-Level Python Programmer", 
-    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
-    shortName: "PCEP"
-  },
-  {
     name: "1Z0-1127-25 - Oracle Cloud Infrastructure 2025 Generative AI Professional",
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/kvzvj2h5_Oracle_university.png",
     shortName: "OCI AI Generative AI Professional"
@@ -187,6 +182,11 @@ export const certifications = [
     name: "1Z0-1122-25 - Oracle Cloud Infrastructure 2025 AI Foundations Associate",
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/md703z4e_Oracle_university.png",
     shortName: "OCI AI Foundations"
+  },
+  {
+    name: "Python PCEP – Certified Entry-Level Python Programmer", 
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
+    shortName: "PCEP"
   }
 ];
 
