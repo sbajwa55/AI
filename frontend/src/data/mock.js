@@ -175,7 +175,7 @@ export const certifications = [
   },
   {
     name: "1Z0-1127-25 - Oracle Cloud Infrastructure 2025 Generative AI Professional",
-    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/kvzvj2h5_Oracle_university.png",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/2at525yx_ocp_logo.png",
     shortName: "OCI AI Generative AI Professional"
   },
   {
