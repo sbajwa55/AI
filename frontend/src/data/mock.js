@@ -327,6 +327,26 @@ export const blogPosts = [
     topics: ["SQL Tuning", "Execution Plans", "Performance", "Optimization"],
     publishedDate: "2025",
     type: "Tuning Guide"
+  },
+  {
+    id: 14,
+    title: "Basics of Generative AI",
+    summary: "Comprehensive guide to Generative AI systems that create new, human-like content. Covers how GenAI works, major model types (LLMs, Diffusion Models, GANs), core concepts, applications across domains, risks and limitations, and future trends in multimodal and responsible AI.",
+    category: "Artificial Intelligence",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/49wa9uv7_Basics_of_Generative_AI.pdf",
+    topics: ["Generative AI", "LLMs", "Machine Learning", "AI Ethics"],
+    publishedDate: "2025",
+    type: "AI Guide"
+  },
+  {
+    id: 15,
+    title: "Popular LLMs and Their Usage",
+    summary: "Overview of popular Large Language Models and their practical applications. Covers leading LLM platforms, use cases, implementation strategies, and best practices for leveraging AI language models in various business and technical scenarios.",
+    category: "Artificial Intelligence",
+    downloadUrl: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/s1f0pq91_Popular_LLMs_and_Their_Usage.pdf",
+    topics: ["Large Language Models", "AI Applications", "LLM Platforms", "Implementation"],
+    publishedDate: "2025",
+    type: "AI Guide"
   }
 ];
 
