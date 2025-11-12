@@ -166,6 +166,74 @@ async def get_contact_messages():
     messages = await db.contact_messages.find().sort("timestamp", -1).to_list(100)
     return [ContactMessage(**message) for message in messages]
 
+# Comment endpoints
+@api_router.post("/comments", response_model=Comment)
+async def submit_comment(comment_data: CommentCreate):
+    """Submit a new comment for a blog post"""
+    try:
+        # Create comment object
+        comment = Comment(**comment_data.dict())
+        
+        # Save to database
+        await db.comments.insert_one(comment.dict())
+        
+        logger.info(f"New comment submitted for blog post {comment_data.blog_post_id} by {comment_data.author_name}")
+        
+        return comment
+        
+    except Exception as e:
+        logger.error(f"Comment submission failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to submit comment")
+
+@api_router.get("/comments/{blog_post_id}", response_model=List[Comment])
+async def get_blog_comments(blog_post_id: str):
+    """Get all approved comments for a specific blog post"""
+    try:
+        comments = await db.comments.find({
+            "blog_post_id": blog_post_id, 
+            "status": "approved"
+        }).sort("timestamp", 1).to_list(100)
+        
+        return [Comment(**comment) for comment in comments]
+        
+    except Exception as e:
+        logger.error(f"Failed to fetch comments: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to fetch comments")
+
+@api_router.get("/admin/comments", response_model=List[Comment])
+async def get_all_comments():
+    """Get all comments for admin moderation"""
+    try:
+        comments = await db.comments.find().sort("timestamp", -1).to_list(200)
+        return [Comment(**comment) for comment in comments]
+        
+    except Exception as e:
+        logger.error(f"Failed to fetch all comments: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to fetch comments")
+
+@api_router.put("/admin/comments/{comment_id}", response_model=Comment)
+async def moderate_comment(comment_id: str, approval_data: CommentApprove):
+    """Approve or reject a comment (admin endpoint)"""
+    try:
+        # Update comment status
+        result = await db.comments.update_one(
+            {"id": comment_id},
+            {"$set": {"status": approval_data.status}}
+        )
+        
+        if result.matched_count == 0:
+            raise HTTPException(status_code=404, detail="Comment not found")
+        
+        # Return updated comment
+        updated_comment = await db.comments.find_one({"id": comment_id})
+        return Comment(**updated_comment)
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Comment moderation failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to moderate comment")
+
 # Include the router in the main app
 app.include_router(api_router)
 
