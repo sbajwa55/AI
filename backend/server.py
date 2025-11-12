@@ -52,6 +52,25 @@ class ContactMessageCreate(BaseModel):
     subject: str
     message: str
 
+class Comment(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    blog_post_id: str
+    author_name: str
+    author_email: EmailStr
+    comment_text: str
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    status: str = "pending"  # pending, approved, rejected
+    ip_address: Optional[str] = None
+
+class CommentCreate(BaseModel):
+    blog_post_id: str
+    author_name: str
+    author_email: EmailStr
+    comment_text: str
+
+class CommentApprove(BaseModel):
+    status: str  # approved or rejected
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
