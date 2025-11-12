@@ -101,24 +101,34 @@ const Blog = () => {
                     ))}
                   </div>
 
-                  {/* Download Button */}
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    asChild
-                    className="w-full border-blue-300 text-blue-700 hover:bg-blue-100 group-hover:border-blue-600 transition-all duration-300"
-                  >
-                    <a
-                      href={post.downloadUrl}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2"
+                  {/* Action Buttons */}
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setSelectedPost(post)}
+                      className="flex-1 border-blue-300 text-blue-700 hover:bg-blue-100 group-hover:border-blue-600 transition-all duration-300"
                     >
-                      <Download size={14} />
-                      <span>Download Document</span>
-                    </a>
-                  </Button>
+                      <Eye size={14} className="mr-1" />
+                      View & Comment
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      asChild
+                      className="border-blue-300 text-blue-700 hover:bg-blue-100 group-hover:border-blue-600 transition-all duration-300"
+                    >
+                      <a
+                        href={post.downloadUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1"
+                      >
+                        <Download size={14} />
+                      </a>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
