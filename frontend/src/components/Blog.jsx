@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { blogPosts } from '../data/mock';
-import { FileText, Download, ArrowRight, Filter } from 'lucide-react';
+import { FileText, Download, ArrowRight, Filter, MessageCircle, Eye } from 'lucide-react';
+import BlogPost from './BlogPost';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
