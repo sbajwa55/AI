@@ -8,12 +8,23 @@ import BlogPost from './BlogPost';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedPost, setSelectedPost] = useState(null);
   
   const categories = ['All', ...new Set(blogPosts.map(post => post.category))];
   
   const filteredPosts = selectedCategory === 'All' 
     ? blogPosts 
     : blogPosts.filter(post => post.category === selectedCategory);
+
+  // If a post is selected, show the detailed view
+  if (selectedPost) {
+    return (
+      <BlogPost 
+        post={selectedPost} 
+        onBack={() => setSelectedPost(null)} 
+      />
+    );
+  }
 
   return (
     <section id="blog" className="py-20 bg-blue-50">
