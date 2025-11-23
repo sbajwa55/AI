@@ -184,7 +184,7 @@ export const certifications = [
     shortName: "OCI AI Foundations"
   },
   {
-    name: "AWS Certified Cloud Practitioner",
+    name: "AWS Certified Cloud Practitioner (AWS Cloud)",
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/ol2za5fr_AWS_cloud_practitioner_certification_SandeepBajwa.jpg",
     shortName: "AWS Cloud Practitioner"
   },
