@@ -184,6 +184,11 @@ export const certifications = [
     shortName: "OCI AI Foundations"
   },
   {
+    name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional (Certificate)",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/ul5zhpnf_AI_OCP_2025_certificate.jpg",
+    shortName: "OCI Gen AI Professional Certificate"
+  },
+  {
     name: "Python PCEP – Certified Entry-Level Python Programmer", 
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
     shortName: "PCEP"
