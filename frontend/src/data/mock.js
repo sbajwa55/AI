@@ -184,11 +184,6 @@ export const certifications = [
     shortName: "OCI AI Foundations"
   },
   {
-    name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional (Certificate)",
-    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/ul5zhpnf_AI_OCP_2025_certificate.jpg",
-    shortName: "OCI Gen AI Professional Certificate"
-  },
-  {
     name: "AWS Certified Cloud Practitioner",
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/ol2za5fr_AWS_cloud_practitioner_certification_SandeepBajwa.jpg",
     shortName: "AWS Cloud Practitioner"
