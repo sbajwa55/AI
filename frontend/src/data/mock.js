@@ -189,6 +189,11 @@ export const certifications = [
     shortName: "OCI Gen AI Professional Certificate"
   },
   {
+    name: "AWS Certified Cloud Practitioner",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/ol2za5fr_AWS_cloud_practitioner_certification_SandeepBajwa.jpg",
+    shortName: "AWS Cloud Practitioner"
+  },
+  {
     name: "Python PCEP – Certified Entry-Level Python Programmer", 
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
     shortName: "PCEP"
