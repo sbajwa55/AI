@@ -189,6 +189,11 @@ export const certifications = [
     shortName: "AWS Cloud Practitioner"
   },
   {
+    name: "Splunk Core Certified Power User",
+    logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/gxkbke7l_splunk-core-certified-power-user.png",
+    shortName: "Splunk Core Power User"
+  },
+  {
     name: "Python PCEP – Certified Entry-Level Python Programmer", 
     logo: "https://customer-assets.emergentagent.com/job_dbexpert/artifacts/zpciywym_pcep.png",
     shortName: "PCEP"
